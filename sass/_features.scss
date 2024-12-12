@@ -1,0 +1,13 @@
+.features {
+    background-color: $color-grey-light-1;
+    grid-column: col-start / col-end 8;
+
+   text-align: center;
+   gap: 6rem;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+
+
+}

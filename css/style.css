@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 15vh 80vh min-content repeat(2, 40vw) repeat(9, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.contact-form {
+  background-color: #00b1ef;
+  grid-column: full-start/full-end;
+}
+
+.header {
+  background-color: #f9f7f6;
+  grid-column: full-start/full-end;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.services-header {
+  background-color: #067ca7;
+  grid-column: full-start/full-end;
+}
+
+.testimonial-header {
+  background-color: #aaa;
+  grid-column: full-start/full-end;
+}
+
+.features-header {
+  background-color: #54483A;
+  grid-column: full-start/full-end;
+}
+
+.location-header {
+  background-color: #00b1ef;
+  grid-column: full-start/full-end;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  z-index: 2000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 3000;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle.active {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+    transition: height 0.5s ease;
+  }
+  nav.active {
+    height: 100%;
+  }
+  nav a {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .menu-toggle {
+    display: block;
+    color: #067ca7;
+    font-size: 2rem;
+  }
+}
+.hero-section {
+  background-color: #00b1ef;
+  grid-column: 1/-1;
+}
+
+.features {
+  background-color: #f9f7f6;
+  grid-column: col-start/col-end 8;
+  text-align: center;
+  gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial {
+  background-color: #6D5D4B;
+  grid-column: full-start/full-end;
+}
+
+.info-section {
+  background-color: #f9f7f6;
+  grid-column: center-start/center-end;
+}
+
+.call-to-action {
+  background-color: #00b1ef;
+  grid-column: full-start/full-end;
+}
+
+.faq {
+  background-color: #f9f7f6;
+}
+
+.footer {
+  background-color: #067ca7;
+  grid-column: full-start/full-end;
+}
+
+.location {
+  background-color: #aaa;
+  grid-column: center-start/center-end;
+}
+
+.services {
+  background-color: #aaa;
+  grid-column: center-start/center-end;
+}
+
+/*# sourceMappingURL=style.css.map */

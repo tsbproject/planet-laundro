@@ -70,11 +70,6 @@ header {
   z-index: 2000;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 nav {
   display: flex;
   gap: 20px;
@@ -82,13 +77,14 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 700;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ff9800;
+  color: #067ca7;
 }
 
 .menu-toggle {
@@ -128,8 +124,9 @@ nav a:hover {
   }
   .menu-toggle {
     display: block;
-    color: #067ca7;
-    font-size: 2rem;
+    fill: #067ca7;
+    height: 2rem;
+    width: 2rem;
   }
 }
 .hero-section {

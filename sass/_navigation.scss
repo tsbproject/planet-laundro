@@ -8,27 +8,28 @@
     color: #fff;
     position: relative;
     z-index: 2000;
+   
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+
 
 nav {
     display: flex;
     gap: 20px;
+ 
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700;
     transition: color 0.3s;
+   
 }
 
 nav a:hover {
-    color: #ff9800;
+    color: $color-primary-dark
 }
 
 .menu-toggle {
@@ -71,8 +72,9 @@ nav a:hover {
 
     .menu-toggle {
         display: block;
-        color: $color-primary-dark;
-        font-size: 2rem;
+        fill: $color-primary-dark;
+        height: 2rem;
+        width: 2rem;
     }
 
 }

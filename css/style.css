@@ -21,7 +21,22 @@ body {
 .container {
   display: grid;
   grid-template-rows: 15vh 80vh min-content repeat(2, 40vw) repeat(9, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.heading-4, .heading-3, .heading-2, .heading-1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.heading-4 {
+  font-size: 1.5rem;
+}
+.heading-4--light {
+  color: #f9f7f6;
+}
+.heading-4--dark {
+  color: #54483A;
 }
 
 .contact-form {
@@ -135,12 +150,30 @@ nav a:hover {
 }
 
 .features {
-  background-color: #f9f7f6;
-  grid-column: col-start/col-end 8;
-  text-align: center;
+  grid-column: center-start/center-end;
+  margin: 15rem 0;
   gap: 6rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
+}
+.feature__icon {
+  fill: #067ca7;
+  width: 4.5rem;
+  height: 4.5rem;
+  grid-row: 1/span 2;
+  transform: translateY(-1);
+}
+.feature__text {
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .testimonial {

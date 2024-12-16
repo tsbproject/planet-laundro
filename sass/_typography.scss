@@ -7,6 +7,13 @@
 .heading-1 {
    @extend %heading;
 
+   font-size: 10rem;
+   font-weight: 800;
+   line-height: 9rem;
+   color: $color-grey-light-1;
+
+   transform: translate(19rem, 10rem)
+
 }
 
 .heading-2 {
@@ -29,4 +36,35 @@
     &--light {color: $color-grey-light-1; }
     &--dark {color: $color-grey-dark-1; }
     
+}
+
+
+.hero-content {
+    display: grid;
+    row-gap: 10rem;
+    justify-content: space-around;
+
+    &__text {
+        
+        font-size: 1.5rem;
+        font-weight:300 ;
+        color: $color-grey-light-1;
+
+
+    }
+
+   
+
+
+    
+}
+
+
+.hero-btn {
+    margin-right: 4rem;
+     
+   
+    width: 35rem;
+    height: 6rem;
+   
 }

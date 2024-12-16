@@ -1,3 +1,8 @@
+.logo-box {
+  height: 20rem;
+  width: 20rem;
+}
+
 *,
 *::before,
 *::after {
@@ -20,13 +25,21 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 15vh 120vh min-content repeat(2, 40vw) repeat(9, min-content);
+  grid-template-rows: 20vh 120vh min-content repeat(2, 40vw) repeat(9, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 10rem;
+  font-weight: 800;
+  line-height: 9rem;
+  color: #f9f7f6;
+  transform: translate(19rem, 10rem);
 }
 
 .heading-4 {
@@ -41,6 +54,23 @@ body {
   color: #54483A;
 }
 
+.hero-content {
+  display: grid;
+  row-gap: 10rem;
+  justify-content: space-around;
+}
+.hero-content__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #f9f7f6;
+}
+
+.hero-btn {
+  margin-right: 4rem;
+  width: 35rem;
+  height: 6rem;
+}
+
 .contact-form {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
@@ -52,8 +82,8 @@ body {
 }
 
 .logo {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
 }
 
 .services-header {
@@ -166,6 +196,7 @@ nav a:hover {
 .hero-section {
   grid-column: full-start/col-end 8;
   grid-template-columns: repeat(auto-fit, minmax(15rem));
+  grid-row: repeat(min-content, 4fr);
   background-image: linear-gradient(200deg, #00b1ef, rgba(6, 124, 167, 0.6) 30%, transparent 59%), url(../img/planet9.jpg);
   background-size: cover;
   background-repeat: no-repeat;

@@ -7,12 +7,12 @@
 .heading-1 {
    @extend %heading;
 
-   font-size: 10rem;
+   font-size: 7rem;
    font-weight: 800;
    line-height: 9rem;
    color: $color-grey-light-1;
 
-   transform: translate(19rem, 10rem)
+//    transform: translate(19rem, 10rem)
 
 }
 
@@ -40,13 +40,19 @@
 
 
 .hero-content {
+    margin-top: 5rem;
+    padding: 10rem 7rem;
     display: grid;
-    row-gap: 10rem;
-    justify-content: space-around;
+    row-gap: 3rem;
+    grid-row: repeat(min-content, 2fr);
+    grid-template-columns: repeat(auto-fit, minmax(5rem));
+    text-align: center;
+
+    
 
     &__text {
         
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight:300 ;
         color: $color-grey-light-1;
 
@@ -61,7 +67,9 @@
 
 
 .hero-btn {
-    margin-right: 4rem;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    align-self: center;
      
    
     width: 35rem;

@@ -61,6 +61,25 @@ nav a:hover {
         transition: height 0.5s ease;
     }
 
+    @media (max-width: 576px) {
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.9);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            z-index: 1000;
+            transition: height 0.5s ease;
+        }
+
+    
+
     nav.active {
         height: 100%;
     }
@@ -77,4 +96,5 @@ nav a:hover {
         width: 2rem;
     }
 
+}
 }

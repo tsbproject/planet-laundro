@@ -20,7 +20,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 15vh 80vh min-content repeat(2, 40vw) repeat(9, min-content);
+  grid-template-rows: 15vh 120vh min-content repeat(2, 40vw) repeat(9, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
@@ -132,6 +132,23 @@ nav a:hover {
     z-index: 1000;
     transition: height 0.5s ease;
   }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+    transition: height 0.5s ease;
+  }
   nav.active {
     height: 100%;
   }
@@ -147,8 +164,21 @@ nav a:hover {
   }
 }
 .hero-section {
-  background-color: #00b1ef;
-  grid-column: 1/-1;
+  grid-column: full-start/col-end 8;
+  grid-template-columns: repeat(auto-fit, minmax(15rem));
+  background-image: linear-gradient(200deg, #00b1ef, rgba(6, 124, 167, 0.6) 30%, transparent 59%), url(../img/planet9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);
+}
+
+.hero-section2 {
+  grid-column: col-end 8/full-end;
+  grid-template-columns: repeat(auto-fit, minmax(20rem));
+  background-image: linear-gradient(105deg, #00b1ef, rgba(6, 124, 167, 0.2) 50%, transparent 100%), url(../img/planet7.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);
 }
 
 .features {

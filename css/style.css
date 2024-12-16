@@ -31,6 +31,8 @@ body {
 
 .heading-4 {
   font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .heading-4--light {
   color: #f9f7f6;
@@ -154,7 +156,7 @@ nav a:hover {
   margin: 15rem 0;
   gap: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: start;
 }
 

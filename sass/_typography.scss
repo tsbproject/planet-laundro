@@ -9,10 +9,9 @@
 
    font-size: 7rem;
    font-weight: 800;
-   line-height: 9rem;
    color: $color-grey-light-1;
+  
 
-//    transform: translate(19rem, 10rem)
 
 }
 
@@ -40,13 +39,16 @@
 
 
 .hero-content {
-    margin-top: 5rem;
-    padding: 10rem 7rem;
-    display: grid;
-    row-gap: 3rem;
-    grid-row: repeat(min-content, 2fr);
-    grid-template-columns: repeat(auto-fit, minmax(5rem));
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-top: 10rem;
+    padding: 3rem 10rem;
+ 
+    
 
     
 
@@ -55,6 +57,7 @@
         font-size: 2rem;
         font-weight:300 ;
         color: $color-grey-light-1;
+        text-align: center;
 
 
     }
@@ -66,13 +69,26 @@
 }
 
 
-.hero-btn {
-    margin-left: 15rem;
-    margin-right: 2rem;
-    align-self: center;
+.hero-button {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+    &__btn {
+        width: 35rem;
+        height: 6rem;
+        font-size: 1.9rem;
+
+    }
+  
+
+   
+   
      
    
-    width: 35rem;
-    height: 6rem;
+    
    
 }

@@ -30,7 +30,7 @@ body {
 }
 @media only screen and (max-width: 37.05em) {
   .container {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 40vw) repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
   }
 }
 @media only screen and (max-width: 31.25em) {
@@ -40,14 +40,31 @@ body {
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
 .heading-1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #f9f7f6;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #f9f7f6;
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.heading-3--light {
+  color: #f9f7f6;
+}
+.heading-3--dark {
+  color: #54483A;
 }
 
 .heading-4 {
@@ -132,8 +149,13 @@ body {
 }
 
 .services-header {
-  background-color: #067ca7;
+  background-color: #00b1ef;
   grid-column: full-start/full-end;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 4rem 3rem;
+  text-align: center;
 }
 
 .testimonial-header {
@@ -164,8 +186,8 @@ header {
 
 nav {
   display: flex;
-  gap: 20px;
-  margin-right: 15rem;
+  gap: 25px;
+  margin-right: 10rem;
 }
 
 nav a {
@@ -307,8 +329,31 @@ nav a:hover {
 }
 
 .services {
-  background-color: #aaa;
   grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  margin: 10rem 0;
+  align-items: start;
+}
+
+.service {
+  display: grid;
+  justify-items: center;
+  padding: 0 10rem;
+}
+.service__img {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 37.05em) {
+  .service__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.service__text {
+  font-size: 1.6rem;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */

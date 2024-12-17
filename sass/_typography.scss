@@ -7,7 +7,7 @@
 .heading-1 {
    @extend %heading;
 
-   font-size: 5rem;
+   font-size: 4rem;
    font-weight: 600;
    color: $color-grey-light-1;
   
@@ -17,11 +17,21 @@
 
 .heading-2 {
     @extend %heading;
-    
+    font-size: 4rem;
+    font-weight: 600;
+    color: $color-grey-light-1;
+        
 }
 
 .heading-3 {
     @extend %heading;
+    @extend %heading;
+    font-size: 2rem;
+    font-weight: 600;
+    
+
+    &--light {color: $color-grey-light-1; }
+    &--dark {color: $color-grey-dark-1; }
     
 }
 

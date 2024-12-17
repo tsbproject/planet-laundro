@@ -1,4 +1,45 @@
 .services {
-    background-color: $color-grey-light-2;
+   
     grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    margin: 10rem 0;
+
+    align-items: start;
+    
+   
+}
+
+.service {
+     display: grid;
+     justify-items: center;
+     padding: 0 10rem;
+
+    &__img {
+        // height: 25rem;
+        // width: 28rem;
+
+        max-width: 100%;
+        height: auto;
+
+        @media only screen and (max-width: $bp-small) {
+            // height: 20rem;
+            // width: 23rem;
+            
+            max-width: 100%;
+            height: auto;
+        
+      }
+
+    }
+
+
+    &__text {
+
+        font-size: 1.6rem;
+        text-align: left;
+
+    }
+
 }

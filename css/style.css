@@ -122,7 +122,7 @@ body {
 }
 
 .logo {
-  width: 15rem;
+  width: 12rem;
   height: 15rem;
 }
 
@@ -160,6 +160,7 @@ header {
 nav {
   display: flex;
   gap: 20px;
+  margin-right: 15rem;
 }
 
 nav a {
@@ -172,6 +173,7 @@ nav a {
 
 nav a:hover {
   color: #067ca7;
+  text-decoration: underline;
 }
 
 .menu-toggle {
@@ -186,7 +188,7 @@ nav a:hover {
   transform: rotate(90deg);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 56.25em) {
   nav {
     position: fixed;
     top: 0;
@@ -203,7 +205,7 @@ nav a:hover {
     transition: height 0.5s ease;
   }
 }
-@media (max-width: 768px) and (max-width: 576px) {
+@media only screen and (max-width: 56.25em) and (max-width: 37.05em) {
   nav {
     position: fixed;
     top: 0;
@@ -234,14 +236,21 @@ nav a:hover {
   }
 }
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  align-content: center;
   grid-column: full-start/full-end;
   background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);
+}
+
+.hero-section2 {
+  grid-column: col-end 8/full-end;
+  grid-template-columns: repeat(auto-fit, minmax(20rem));
+  background-image: linear-gradient(105deg, #00b1ef, rgba(6, 124, 167, 0.2) 50%, transparent 100%), url(../img/planet7.jpg);
+  background-size: contain;
+  background-repeat: repeat;
   box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);
 }
 

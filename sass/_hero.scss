@@ -1,8 +1,10 @@
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    align-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
 
     grid-column:full-start /full-end ;
     
@@ -24,19 +26,19 @@
 
 
 
-// .hero-section2 {
-//     grid-column: col-end 8 / full-end;
-//     grid-template-columns: repeat(auto-fit, minmax(20rem));
+.hero-section2 {
+    grid-column: col-end 8 / full-end;
+    grid-template-columns: repeat(auto-fit, minmax(20rem));
 
-//     background-image:linear-gradient( 105deg, 
-//     rgba($color-primary, 8),
-//     rgba($color-primary-dark, .2) 50%,
+    background-image:linear-gradient( 105deg, 
+    rgba($color-primary, 8),
+    rgba($color-primary-dark, .2) 50%,
     
-//     transparent 100%), 
+    transparent 100%), 
     
     
-//     url(../img/planet7.jpg);
-//     background-size: contain; // or 100% value
-//     background-repeat: repeat;
-//     box-shadow: 0 1.5rem 4rem rgba($color-primary, .2);
-// }
+    url(../img/planet7.jpg);
+    background-size: contain; // or 100% value
+    background-repeat: repeat;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary, .2);
+}

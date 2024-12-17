@@ -83,13 +83,20 @@ body {
   }
 }
 .hero-button__btn {
+  background-color: transparent;
   margin-right: 2rem;
   width: 25rem;
   height: 6rem;
   font-size: 1.6rem;
   font-weight: 400;
   border-radius: 3rem;
-  color: #067ca7;
+  border: solid #f9f7f6;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #f9f7f6;
+}
+.hero-button__btn:hover {
+  background-color: #067ca7;
 }
 @media only screen and (max-width: 37.05em) {
   .hero-button__btn {

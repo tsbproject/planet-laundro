@@ -78,13 +78,25 @@
   }
 
     &__btn {
+        background-color: transparent;
         margin-right: 2rem;
         width: 25rem;
         height: 6rem;
         font-size: 1.6rem;
         font-weight: 400;
         border-radius: 3rem;
-        color: $color-primary-dark;
+         border: solid $color-grey-light-1;
+        cursor: pointer;
+        transition: all .2s;
+        color: $color-grey-light-1;
+
+        &:hover {
+            background-color: $color-primary-dark;
+        }
+
+
+
+
 
         @media only screen and (max-width: $bp-small) {
             margin-right: 2rem;

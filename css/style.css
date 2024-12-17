@@ -35,8 +35,8 @@ body {
 }
 
 .heading-1 {
-  font-size: 7rem;
-  font-weight: 800;
+  font-size: 5rem;
+  font-weight: 600;
   color: #f9f7f6;
 }
 
@@ -53,15 +53,11 @@ body {
 }
 
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  margin-top: 10rem;
-  padding: 3rem 10rem;
+  padding: 0 2rem;
 }
 .hero-content__text {
+  padding: 0 4rem;
   font-size: 2rem;
   font-weight: 300;
   color: #f9f7f6;
@@ -73,12 +69,30 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 37.05em) {
+  .hero-button {
+    flex-direction: column;
+  }
 }
 .hero-button__btn {
-  width: 35rem;
+  margin-right: 2rem;
+  width: 25rem;
   height: 6rem;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  color: #067ca7;
+}
+@media only screen and (max-width: 37.05em) {
+  .hero-button__btn {
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 1.8rem;
+    color: #067ca7;
+  }
 }
 
 .contact-form {
@@ -204,9 +218,12 @@ nav a:hover {
   }
 }
 .hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   grid-column: full-start/full-end;
-  grid-template-columns: repeat(auto-fit, minmax(15rem));
-  background-image: linear-gradient(200deg, #00b1ef, rgba(6, 124, 167, 0.6) 30%, transparent 59%), url(../img/planet9.jpg);
+  background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet9.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);

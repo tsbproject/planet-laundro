@@ -28,6 +28,11 @@ body {
   grid-template-rows: 20vh 140vh min-content repeat(2, 40vw) repeat(9, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+@media only screen and (max-width: 37.05em) {
+  .container {
+    grid-template-rows: 20vh 100vh min-content repeat(2, 40vw) repeat(9, min-content);
+  }
+}
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Josefin Sans", sans-serif;
@@ -82,6 +87,7 @@ body {
   width: 25rem;
   height: 6rem;
   font-size: 1.6rem;
+  font-weight: 400;
   border-radius: 3rem;
   color: #067ca7;
 }
@@ -89,6 +95,8 @@ body {
   .hero-button__btn {
     margin-right: 2rem;
     padding: 1rem;
+    width: 18rem;
+    height: 4rem;
     font-size: 1.3rem;
     border-radius: 1.8rem;
     color: #067ca7;
@@ -223,7 +231,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   grid-column: full-start/full-end;
-  background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet9.jpg);
+  background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);

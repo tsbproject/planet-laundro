@@ -35,7 +35,7 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .container {
-    grid-template-rows: 20vh 120vh min-content repeat(2, 40vw) repeat(9, min-content);
+    grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
   }
 }
 
@@ -341,9 +341,19 @@ nav a:hover {
   justify-items: center;
   padding: 0 10rem;
 }
+@media only screen and (max-width: 37.05em) {
+  .service {
+    padding: 0 10rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .service {
+    padding: 0 5rem;
+  }
+}
 .service__img {
   max-width: 100%;
-  height: auto;
+  height: 25rem;
 }
 @media only screen and (max-width: 37.05em) {
   .service__img {

@@ -55,7 +55,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .container {
-    grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
+    grid-template-rows: 20vh 120vh min-content repeat(2, 350vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
@@ -408,6 +408,11 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   }
 }
+@media only screen and (max-width: 25em) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
 
 .service {
   display: grid;
@@ -433,6 +438,11 @@ nav a:hover {
 @media only screen and (max-width: 31.25em) {
   .service {
     padding: 0 5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .service {
+    padding: 0 7rem;
   }
 }
 .service__img {

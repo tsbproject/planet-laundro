@@ -88,7 +88,7 @@ body {
     
 
 @media only screen and (max-width: $bp-smallest) {
-    grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
+    grid-template-rows: 20vh 120vh min-content repeat(2, 350vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
 
 }

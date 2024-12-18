@@ -1,6 +1,8 @@
 .header {
     background-color: $color-grey-light-1;
     grid-column: full-start / full-end;
+
+   
 }
 
 
@@ -9,6 +11,13 @@
 .logo {
     width: 12rem;
     height: 15rem;
+
+
+    @media only screen and (max-width:$bp-small) {
+        width: 10rem;
+        height: 12rem;
+
+    }
     
 }
 
@@ -27,6 +36,8 @@
     justify-items: center;
     padding: 4rem 3rem;
     text-align: center;
+
+    
 }
 
 

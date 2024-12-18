@@ -21,6 +21,7 @@ body {
   color: #6D5D4B;
   font-weight: 300;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,21 +32,31 @@ body {
 @media only screen and (max-width: 68.75em) {
   .container {
     grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .container {
     grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container {
     grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .container {
     grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  }
+}
+@media only screen and (max-width: 25em) {
+  .container {
+    grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 
@@ -169,6 +180,12 @@ body {
   width: 12rem;
   height: 15rem;
 }
+@media only screen and (max-width: 37.05em) {
+  .logo {
+    width: 10rem;
+    height: 12rem;
+  }
+}
 
 .services-header {
   background-color: #00b1ef;
@@ -205,16 +222,10 @@ header {
   position: relative;
   z-index: 2000;
 }
-@media only screen and (max-width: 31.25em) {
-  header {
-    justify-content: space-between;
-  }
-}
 
 nav {
   display: flex;
   gap: 25px;
-  margin-right: 10rem;
 }
 
 nav a {
@@ -226,13 +237,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #067ca7;
+  color: #555;
   text-decoration: underline;
 }
 
 .menu-toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   z-index: 3000;
   transition: transform 0.3s ease;
@@ -240,26 +251,35 @@ nav a:hover {
 
 .menu-toggle.active {
   transform: rotate(90deg);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  z-index: 3001;
+}
+
+.close-btn {
+  display: none;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 3001;
 }
 
 @media only screen and (max-width: 56.25em) {
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.9);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    z-index: 1000;
-    transition: height 0.5s ease;
+  .close-btn {
+    display: block;
   }
 }
-@media only screen and (max-width: 56.25em) and (max-width: 37.05em) {
+@media only screen and (max-width: 56.25em) {
+  .menu-toggle {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
   nav {
     position: fixed;
     top: 0;
@@ -276,33 +296,46 @@ nav a:hover {
     transition: height 0.5s ease;
   }
   nav.active {
-    height: 100%;
+    height: 100%; /* Carpet display */
   }
   nav a {
     font-size: 1.8rem;
     color: #fff;
   }
+}
+@media only screen and (max-width: 37.05em) {
   .menu-toggle {
-    display: block;
-    fill: #067ca7;
+    margin-right: 10rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .menu-toggle {
     height: 2rem;
     width: 2rem;
+    margin-right: 5rem;
+  }
+}
+@media only screen and (max-width: 31.25em) and (max-width: 25em) {
+  .menu-toggle {
+    display: block; /* Make it visible for devices below 400px */
+    height: 2rem;
+    width: 2rem;
+    margin-right: 10rem;
   }
 }
 .hero-section {
   display: grid;
   align-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(rem, 1fr));
   grid-column: full-start/full-end;
   background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);
 }
 @media only screen and (max-width: 31.25em) {
   .hero-section {
-    background-size: cover;
-    grid-template-columns: repeat(auto-fit, minmax(45rem));
+    background-size: contain;
+    background-position: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(50rem));
     justify-items: center;
   }
 }
@@ -366,23 +399,19 @@ nav a:hover {
 .services {
   grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   margin: 10rem 0;
   align-items: start;
 }
-@media only screen and (max-width: 68.75em) {
-  .services {
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  }
-}
 @media only screen and (max-width: 56.25em) {
   .services {
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   }
 }
 
 .service {
   display: grid;
+  row-gap: 3rem;
   justify-items: center;
   padding: 0 10rem;
 }
@@ -393,7 +422,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 56.25em) {
   .service {
-    padding: 0 5rem;
+    padding: 0 25rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
@@ -412,7 +441,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 68.75em) {
   .service__img {
-    width: 100%;
+    max-width: 100%;
     height: 20vh;
   }
 }
@@ -425,7 +454,7 @@ nav a:hover {
 @media only screen and (max-width: 37.05em) {
   .service__img {
     width: 100%;
-    height: 23vh;
+    height: 25vh;
   }
 }
 @media only screen and (max-width: 31.25em) {
@@ -434,9 +463,16 @@ nav a:hover {
     height: 25vh;
   }
 }
+@media only screen and (max-width: 25em) {
+  .service__img {
+    width: 100%;
+    height: 25vh;
+  }
+}
 .service__text {
   font-size: 1.6rem;
   text-align: left;
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

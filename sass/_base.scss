@@ -28,6 +28,7 @@ $bp-large:68.75em; //1100px/16
 $bp-medium:56.25em; //900px/16
 $bp-small:37.05em; //600px/16
 $bp-smaller:31.25em; //500px/16
+$bp-smallest:25em; //400px/16
 
 *,
 *::before,
@@ -49,6 +50,7 @@ body {
     color: $color-grey-dark-2;
     font-weight: 300;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -58,27 +60,38 @@ body {
 
      @media only screen and (max-width: $bp-large) {
         grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
-        
+        grid-template-columns: repeat(auto-fit, minmax(1fr));
+
   } 
      
      
      
      @media only screen and (max-width: $bp-medium) {
         grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
-        
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
   } 
      
      
      @media only screen and (max-width: $bp-small) {
         grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
-        
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
   }
 
      @media only screen and (max-width: $bp-smaller) {
+        // grid-template-rows: auto ;
     grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
-    
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+
 }
     
+
+@media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+
+}
 
     
 }

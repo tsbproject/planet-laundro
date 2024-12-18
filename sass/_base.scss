@@ -56,12 +56,25 @@ body {
      grid-template-rows: 20vh 140vh min-content repeat(2, 40vw) repeat(9, min-content);
      grid-template-columns: [full-start] minmax(6rem, 1fr)  [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
+     @media only screen and (max-width: $bp-large) {
+        grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+        
+  } 
+     
+     
+     
+     @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+        
+  } 
+     
+     
      @media only screen and (max-width: $bp-small) {
         grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
         
   }
 
-  @media only screen and (max-width: $bp-smaller) {
+     @media only screen and (max-width: $bp-smaller) {
     grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
     
 }

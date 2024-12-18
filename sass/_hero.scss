@@ -1,10 +1,7 @@
 .hero-section {
     display: grid;
     align-content: center;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(rem, 1fr));
 
     grid-column:full-start /full-end ;
     
@@ -21,6 +18,15 @@
     background-size: cover; // or 100% value
     background-repeat: no-repeat;
     box-shadow: 0 1.5rem 4rem rgba($color-primary, .2);
+
+    @media only screen and (max-width:$bp-smaller) {
+         background-size: cover;// or 100% value
+        // background-position: 50%;
+        grid-template-columns: repeat(auto-fit, minmax(45rem));
+        justify-items: center;
+        
+
+    }
 
 }
 

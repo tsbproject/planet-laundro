@@ -8,6 +8,12 @@
     color: #fff;
     position: relative;
     z-index: 2000;
+
+
+@media only screen and (max-width:$bp-smaller) {
+    justify-content: space-between;
+}
+
    
 }
 

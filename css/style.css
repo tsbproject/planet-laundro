@@ -28,6 +28,16 @@ body {
   grid-template-rows: 20vh 140vh min-content repeat(2, 40vw) repeat(9, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+@media only screen and (max-width: 68.75em) {
+  .container {
+    grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+  }
+}
 @media only screen and (max-width: 37.05em) {
   .container {
     grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
@@ -49,11 +59,23 @@ body {
   font-weight: 600;
   color: #f9f7f6;
 }
+@media only screen and (max-width: 31.25em) {
+  .heading-1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
 
 .heading-2 {
   font-size: 4rem;
   font-weight: 600;
   color: #f9f7f6;
+}
+@media only screen and (max-width: 31.25em) {
+  .heading-2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
 }
 
 .heading-3 {
@@ -183,6 +205,11 @@ header {
   position: relative;
   z-index: 2000;
 }
+@media only screen and (max-width: 31.25em) {
+  header {
+    justify-content: space-between;
+  }
+}
 
 nav {
   display: flex;
@@ -265,11 +292,19 @@ nav a:hover {
 .hero-section {
   display: grid;
   align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(rem, 1fr));
   grid-column: full-start/full-end;
   background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 1.5rem 4rem rgba(0, 177, 239, 0.2);
+}
+@media only screen and (max-width: 31.25em) {
+  .hero-section {
+    background-size: cover;
+    grid-template-columns: repeat(auto-fit, minmax(45rem));
+    justify-items: center;
+  }
 }
 
 .features {
@@ -335,11 +370,31 @@ nav a:hover {
   margin: 10rem 0;
   align-items: start;
 }
+@media only screen and (max-width: 68.75em) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  }
+}
 
 .service {
   display: grid;
   justify-items: center;
   padding: 0 10rem;
+}
+@media only screen and (max-width: 68.75em) {
+  .service {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .service {
+    padding: 0 5rem;
+  }
 }
 @media only screen and (max-width: 37.05em) {
   .service {
@@ -355,10 +410,28 @@ nav a:hover {
   width: 100%;
   height: 25rem;
 }
+@media only screen and (max-width: 68.75em) {
+  .service__img {
+    width: 100%;
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .service__img {
+    width: 100%;
+    height: 40vh;
+  }
+}
 @media only screen and (max-width: 37.05em) {
   .service__img {
     width: 100%;
-    height: auto;
+    height: 23vh;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .service__img {
+    width: 100%;
+    height: 25vh;
   }
 }
 .service__text {

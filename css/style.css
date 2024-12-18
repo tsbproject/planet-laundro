@@ -29,6 +29,12 @@ body {
   grid-template-rows: 20vh 140vh min-content repeat(2, 40vw) repeat(9, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+@media only screen and (max-width: 75em) {
+  .container {
+    grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
 @media only screen and (max-width: 68.75em) {
   .container {
     grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
@@ -37,7 +43,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .container {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content repeat(2, 330vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
@@ -55,7 +61,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .container {
-    grid-template-rows: 20vh 120vh min-content repeat(2, 350vw) repeat(9, min-content);
+    grid-template-rows: 20vh 120vh min-content repeat(2, 359vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
@@ -320,7 +326,7 @@ nav a:hover {
     display: block; /* Make it visible for devices below 400px */
     height: 2rem;
     width: 2rem;
-    margin-right: 10rem;
+    margin-right: 2rem;
   }
 }
 .hero-section {
@@ -331,12 +337,32 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 56.25em) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 @media only screen and (max-width: 31.25em) {
   .hero-section {
-    background-size: contain;
-    background-position: 50%;
-    grid-template-columns: repeat(auto-fit, minmax(50rem));
-    justify-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -410,7 +436,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .services {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
   }
 }
 
@@ -420,6 +446,11 @@ nav a:hover {
   justify-items: center;
   padding: 0 10rem;
 }
+@media only screen and (max-width: 75em) {
+  .service {
+    padding: 0 2rem;
+  }
+}
 @media only screen and (max-width: 68.75em) {
   .service {
     padding: 0 2rem;
@@ -427,7 +458,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 56.25em) {
   .service {
-    padding: 0 25rem;
+    padding: 0 10rem;
   }
 }
 @media only screen and (max-width: 37.05em) {

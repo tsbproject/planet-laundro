@@ -8,13 +8,15 @@
 
     align-items: start;
 
+
     @media only screen and (max-width: $bp-medium) {
       grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   
   }
 
+
   @media only screen and (max-width: $bp-smallest) {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
 
 }
    
@@ -26,13 +28,18 @@
      justify-items: center;
      padding: 0 10rem;
 
+     @media only screen and (max-width: $bp-largest) {
+      padding: 0 2rem;
+  
+}
+
      @media only screen and (max-width: $bp-large) {
         padding: 0 2rem;
     
   }
 
   @media only screen and (max-width: $bp-medium) {
-    padding: 0  25rem;
+    padding: 0  10rem;
 
 }
 

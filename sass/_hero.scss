@@ -16,14 +16,40 @@
     background-size: cover; // or 100% value
     background-repeat: no-repeat;
 
+
+    @media only screen and (max-width:$bp-medium) {
+        background-size: cover;// or 100% value
+       background-position: center;
+       background-repeat: no-repeat;
+
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        background-size: cover;// or 100% value
+       background-position: center;
+       background-repeat: no-repeat;
+      
+   }
+
     @media only screen and (max-width:$bp-smaller) {
-         background-size: contain;// or 100% value
-        background-position: 50%;
-        grid-template-columns: repeat(auto-fit, minmax(50rem));
-        justify-items: center;
+         background-size: cover;// or 100% value
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    
         
 
     }
+
+    @media only screen and (max-width:$bp-smallest) {
+        background-size: cover;// or 100% value
+       background-position: center;
+       background-repeat: no-repeat;
+      
+   
+       
+
+   }
 
 }
 

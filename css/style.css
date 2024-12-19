@@ -666,6 +666,19 @@ nav a:hover {
 @media only screen and (max-width: 37.05em) {
   .hero-button {
     flex-direction: column;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .hero-button {
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .hero-button {
+    flex-direction: column;
+    margin-right: 0;
   }
 }
 .hero-button__btn {
@@ -693,6 +706,22 @@ nav a:hover {
     height: 5rem;
     font-size: 1.3rem;
     border-radius: 1.8rem;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .hero-button__btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 26rem;
+    height: 6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #f9f7f6;
+    cursor: pointer;
+    transition: all 0.2s;
     color: #f9f7f6;
   }
 }

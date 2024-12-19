@@ -3,6 +3,23 @@
     grid-column: full-start / full-end;
 
    
+
+   
+}
+
+
+.logo-box {
+    height: 20rem;
+    width: 20rem;
+
+    @media only screen and (max-width:$bp-smallest) {
+        width: 8rem;
+        height: 10rem;
+
+    }
+
+   
+    
 }
 
 
@@ -16,6 +33,19 @@
     @media only screen and (max-width:$bp-small) {
         width: 10rem;
         height: 12rem;
+
+    }
+
+    @media only screen and (max-width:$bp-smaller) {
+        width: 10rem;
+        height: 12rem;
+
+    }
+
+
+    @media only screen and (max-width:$bp-smallest) {
+        width: 8rem;
+        height: 10rem;
 
     }
     
@@ -48,8 +78,13 @@
 
 
 .features-header {
-    background-color: $color-grey-dark-1;
+    background-color: $color-primary;
     grid-column: full-start / full-end;
+
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .location-header {
@@ -57,5 +92,77 @@
     grid-column: full-start / full-end;
 }
 
+
+
+
+/* Social Media Icons Container */
+.social-media-icons {
+    display: flex;
+    justify-content: space-between; /* Center the icons */
+    align-items: center; /* Align them vertically */
+    gap: 2rem; /* Space between the icons */
+    padding: 1rem 0; /* Add some padding at the top and bottom */
+    position: relative;
+    top: -5rem;
+    right: 0;
+    bottom: 0;
+    left: 67rem;
+  
+
+    @media only screen and (max-width: $bp-large) {
+
+        position: relative;
+        top: -5rem;
+        right: 0;
+        bottom: 0;
+        left: 50rem
+       
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        display: none;
+    }
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        display: none;
+    }
+
+
+    
+}
+
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    color: $color-primary; /* Icon color */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: $color-primary;
+   
+}
+
+/* Hover Effect for Social Icons */
+.social-icon:hover {
+    background-color: #007bff; /* Light blue background */
+    color: #fff; /* White icon on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
 
 

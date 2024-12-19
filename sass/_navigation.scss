@@ -7,6 +7,12 @@ header {
     color: #fff;
     position: relative;
     z-index: 2000;
+
+    @media only screen and (max-width: $bp-smallest) { 
+       justify-content: auto;
+       overflow-x: hidden;
+    }
+
 }
 
 
@@ -21,6 +27,12 @@ nav a {
     font-size: 1.7rem;
     font-weight: 700;
     transition: color 0.3s;
+
+    @media only screen and (max-width: $bp-large) { 
+        font-size: 1.5rem;
+    }
+
+    
 }
 
 nav a:hover {
@@ -45,6 +57,9 @@ nav a:hover {
     color: #fff; 
     z-index: 3001; 
 }
+
+
+
 
 
 .close-btn {

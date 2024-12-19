@@ -17,10 +17,7 @@ $font-display: 'Poppins', sans-serif;
 
 // HEAD LOGO
 
-.logo-box {
-    height: 20rem;
-    width: 20rem;
-}
+
 
 
 $bp-largest: 75em;  // 1200px/16 = 75em
@@ -55,7 +52,7 @@ body {
 
 .container {
      display: grid;
-     grid-template-rows: 20vh 140vh min-content repeat(2, 40vw) repeat(9, min-content);
+     grid-template-rows: 20vh 140vh min-content repeat(2, 50vw) repeat(9, min-content);
      grid-template-columns: [full-start] minmax(6rem, 1fr)  [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
      
@@ -90,14 +87,16 @@ body {
      @media only screen and (max-width: $bp-smaller) {
         // grid-template-rows: auto ;
     grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
 
 }
     
 
 @media only screen and (max-width: $bp-smallest) {
-    grid-template-rows: 20vh 120vh min-content repeat(2, 359vw) repeat(9, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+    grid-template-rows: 20vh 120vh min-content  400vw min-content repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+   
+
 
 }
 

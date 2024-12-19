@@ -2,7 +2,103 @@
 .info-section {
     background-color: $color-grey-light-1;
     grid-column: center-start / center-end;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width:$bp-smaller) {
+            justify-content: center;
+        }
+
+        @media only screen and (max-width:$bp-smallest) {
+            justify-content: center;
+            padding: 0 5rem;
+        }
+   
+
+ 
+    &__text {
+        text-align: center;
+        font-size: 2.5rem;
+        
+        @media only screen and (max-width:$bp-smaller) {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (max-width:$bp-smallest) {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+
 }
+
+
+
+/* Social Media Icons Container */
+.social-media-icons2 {
+    display: flex;
+    justify-content: center; /* Center the icons */
+   
+    gap: 2rem; /* Space between the icons */
+    padding: 1rem 0; /* Add some padding at the top and bottom */
+    
+
+    @media only screen and (max-width: $bp-large) {
+
+       
+       
+    }
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     display: none;
+    // }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     display: none;
+    // }
+
+    // @media only screen and (max-width: $bp-smaller) {
+    //     display: none;
+    // }
+
+
+    // @media only screen and (max-width: $bp-smallest) {
+    //     display: none;
+    // }
+
+
+    
+}
+
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    color: $color-primary; /* Icon color */
+    font-size: 2.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: $color-primary;
+   
+}
+
+/* Hover Effect for Social Icons */
+.social-icon:hover {
+    background-color: #007bff; /* Light blue background */
+    color: #fff; /* White icon on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
 
 
 .call-to-action {

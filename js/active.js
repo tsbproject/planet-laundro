@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 // // Ensure DOM is fully loaded before accessing elements
 // document.addEventListener('DOMContentLoaded', () => {
 //     // Select elements

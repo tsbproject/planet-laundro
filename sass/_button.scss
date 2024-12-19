@@ -1,0 +1,190 @@
+.hero-button {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        
+    
+  }
+
+    &__btn {
+        background-color: transparent;
+        margin-right: 2rem;
+        width: 25rem;
+        height: 6rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 3rem;
+        border: solid $color-grey-light-1;
+        cursor: pointer;
+        transition: all .2s;
+        color: $color-grey-light-1;
+
+        &:hover {
+            background-color: $color-primary-dark;
+        }
+
+
+
+
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 2rem;
+            padding: 1rem;
+            width: 25rem;
+            height: 5rem;
+            font-size: 1.3rem;
+            border-radius: 1.8rem;
+            color: $color-grey-light-1;
+        
+      }
+        
+
+    }
+  
+
+   
+   
+     
+   
+    
+   
+}
+
+
+.services-btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 25rem;
+    height: 6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid $color-primary;
+    cursor: pointer;
+    transition: all .2s;
+    color: $color-primary;
+    
+
+    &:hover {
+        background-color: $color-primary-dark;
+        color: $color-grey-light-1
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        background-color: transparent;
+        margin-right: 2rem;
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 3rem;
+        border: solid $color-primary;
+        cursor: pointer;
+        transition: all .2s;
+        color: $color-primary;
+        margin-bottom: 2rem;
+        
+    
+        &:hover {
+            background-color: $color-primary-dark;
+            color: $color-grey-light-1
+        }
+    
+  }
+
+
+}
+
+
+
+.know-button {
+    display: grid;
+    grid-column: 1 / 3;
+   
+    justify-content: center;
+    align-items: center;
+
+    
+    margin-top: 2rem;
+    
+   
+
+
+    &__btn {
+        background-color: $color-primary;
+        margin-right: 2rem;
+        width: 25rem;
+        height: 6rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 3rem;
+        border: solid $color-primary;
+        cursor: pointer;
+        transition: all .2s;
+        color: $color-grey-dark-2;
+        
+
+        &:hover {
+            background-color: $color-primary-dark;
+            color: $color-grey-light-1
+        }
+
+
+
+
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 2rem;
+            padding: 1rem;
+            width: 25rem;
+            height: 5rem;
+            font-size: 1.3rem;
+            border-radius: 1.8rem;
+            color: $color-grey-light-1;
+        
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 25rem;
+        height: 5rem;
+        font-size: 1.3rem;
+        border-radius: 1.8rem;
+        color: $color-grey-light-1;
+    
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.3rem;
+    border-radius: 1.8rem;
+    color: $color-grey-light-1;
+
+}
+        
+
+    }
+  
+
+   
+   
+     
+   
+    
+   
+}

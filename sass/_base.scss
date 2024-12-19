@@ -93,7 +93,7 @@ body {
     
 
 @media only screen and (max-width: $bp-smallest) {
-    grid-template-rows: 20vh 120vh min-content  400vw min-content repeat(9, min-content);
+    grid-template-rows: 20vh 120vh min-content  450vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
    
 

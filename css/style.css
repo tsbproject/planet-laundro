@@ -646,7 +646,7 @@ nav a:hover {
 @media only screen and (max-width: 25em) {
   .service__img {
     width: 100%;
-    height: 25vh;
+    height: 25rem;
   }
 }
 .service__text {

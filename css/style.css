@@ -731,9 +731,21 @@ nav a:hover {
     color: #00b1ef;
     margin-bottom: 2rem;
   }
-  .services-btn:hover {
-    background-color: #067ca7;
-    color: #f9f7f6;
+}
+@media only screen and (max-width: 25em) {
+  .services-btn {
+    background-color: transparent;
+    width: 22rem;
+    height: 6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #00b1ef;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #00b1ef;
+    margin-bottom: 2rem;
   }
 }
 

@@ -93,14 +93,31 @@
         transition: all .2s;
         color: $color-primary;
         margin-bottom: 2rem;
-        
-    
-        &:hover {
-            background-color: $color-primary-dark;
-            color: $color-grey-light-1
-        }
+
+
     
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    background-color: transparent;
+    width: 22rem;
+    height: 6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid $color-primary;
+    cursor: pointer;
+    transition: all .2s;
+    color: $color-primary;
+    margin-bottom: 2rem;
+
+
+
+}
+
+
+  
 
 
 }

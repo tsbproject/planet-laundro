@@ -495,7 +495,7 @@ nav a:hover {
 .client {
   display: flex;
   flex-direction: column;
-  background-color: #ede7e7;
+  background-color: #f6f4f4;
   border-radius: 3rem;
   align-items: start;
   padding: 5rem 10rem;

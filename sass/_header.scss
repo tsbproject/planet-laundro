@@ -72,8 +72,13 @@
 
 
 .testimonial-header {
-    background-color: $color-grey-light-2;
+    background-color: $color-primary;
     grid-column: full-start / full-end;
+
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
 
@@ -148,7 +153,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%; 
-    color: $color-primary; /* Icon color */
+    color: $color-primary; 
     font-size: 1.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -158,11 +163,11 @@
    
 }
 
-/* Hover Effect for Social Icons */
+
 .social-icon:hover {
-    background-color: #007bff; /* Light blue background */
-    color: #fff; /* White icon on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #007bff; 
+    color: #fff; 
+    transform: scale(1.1); 
 }
 
 

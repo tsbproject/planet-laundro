@@ -50,7 +50,7 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .container {
-    grid-template-rows: 20vh 120vh min-content repeat(2, 300vw) repeat(9, min-content);
+    grid-template-rows: 20vh 120vh min-content 300vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
@@ -193,8 +193,12 @@ body {
 }
 
 .testimonial-header {
-  background-color: #aaa;
+  background-color: #00b1ef;
   grid-column: full-start/full-end;
+  display: grid;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .features-header {
@@ -261,7 +265,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #00b1ef; /* Icon color */
+  color: #00b1ef;
   font-size: 1.5rem;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -270,11 +274,10 @@ body {
   fill: #00b1ef;
 }
 
-/* Hover Effect for Social Icons */
 .social-icon:hover {
-  background-color: #007bff; /* Light blue background */
-  color: #fff; /* White icon on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 header {
@@ -466,8 +469,62 @@ nav a:hover {
 }
 
 .testimonial {
-  background-color: #6D5D4B;
   grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  gap: 3rem;
+  padding: 2rem 3rem;
+  margin: 4rem;
+}
+@media only screen and (max-width: 31.25em) {
+  .testimonial {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+    padding: 2rem 0rem;
+    margin: 4rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .testimonial {
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 2rem 4rem;
+    margin: 4rem 1.2rem;
+  }
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  background-color: #ede7e7;
+  border-radius: 3rem;
+  align-items: start;
+  padding: 5rem 10rem;
+  gap: 2rem;
+}
+@media only screen and (max-width: 31.25em) {
+  .client {
+    padding: 2rem 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .client {
+    padding: 2rem 4rem;
+  }
+}
+.client__stars {
+  display: flex;
+}
+.client__star {
+  width: 2rem;
+  height: 2rem;
+  fill: #067ca7;
+}
+.client__testimony {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black;
 }
 
 .info-section {
@@ -617,7 +674,8 @@ nav a:hover {
 .service__img {
   width: 100%;
   height: 25rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.7rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 68.75em) {
   .service__img {

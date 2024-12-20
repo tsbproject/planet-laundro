@@ -79,6 +79,7 @@
     align-content: center;
     justify-content: space-around;
     text-align: center;
+    height: 20vh;
 }
 
 
@@ -90,11 +91,16 @@
     align-content: center;
     justify-content: space-around;
     text-align: center;
+    height: 20vh;
 }
 
 .location-header {
     background-color: $color-primary;
     grid-column: full-start / full-end;
+
+    display: grid;
+    justify-content: center;
+    height: 20vh;
 }
 
 

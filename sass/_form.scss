@@ -1,4 +1,124 @@
-.contact-form {
+.contact-info {
     background-color: $color-primary;
     grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+
+    padding: 2rem 4rem;
+    column-gap: 3rem;
 }
+
+
+.contact-detail {
+    &__heading {
+
+        font-size: 5rem;
+        font-weight: 800;
+        color: $color-grey-light-1;
+
+    }
+
+
+    &__text {
+        font-size: 2rem;
+        color: $color-grey-light-1;
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 70%;
+    
+        }
+
+    }
+}
+
+
+
+
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form Row for Name, Phone, and Email */
+.form-row {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 70%;
+
+    }
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-submit {
+    padding: 0.8rem 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 70%;
+
+    }
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+// @media only screen and (max-width: $bp-smallest) {
+//     .form-row {
+//         // grid-template-columns: 1fr; 
+//         grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+//     }
+
+ 
+
+    .btn-submit {
+        font-size: 0.9rem;
+    }

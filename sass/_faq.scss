@@ -76,8 +76,8 @@
 
 /* FAQ Question */
 .faq-question {
-    background: $color-primary-dark;    
-    color: #fff;
+    background: $color-primary;    
+    color: $color-grey-dark-2;
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
@@ -94,13 +94,16 @@
 }
 
 .faq-question:hover {
-    background: #444;
+    background: $color-primary-dark;
 }
 
 /* Arrow */
 .arrow {
-    font-size: 1.5rem;
+    font-size: 3rem;
     transition: transform 0.3s ease;
+    color: $color-grey-dark-2;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 /* FAQ Answer */

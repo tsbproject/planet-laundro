@@ -203,7 +203,7 @@
     </div>
 
     <div class="client">
-        <<div class="client__stars">
+        <div class="client__stars">
             <svg class="client__star">
                 <use xlink:href="img/sprite.svg#icon-star"></use>
             </svg>
@@ -381,11 +381,15 @@
     </div>
 
     <div class="location-header" id="location">
-        LOCATION HEADER
+        <h2 class="heading-2">Our Location </h2>
     </div>
 
     <div class="location">
-        LOCATION
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1196827954554!2d-87.71544182444107!3d41.56665427127768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e17e8d0f90c77%3A0x31a4dd596e7b059d!2s17781%20Winston%20Dr%2C%20Country%20Club%20Hills%2C%20IL%2060478%2C%20USA!5e0!3m2!1sen!2sng!4v1734709470506!5m2!1sen!2sng" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map-description">Visit us at 17781 Winston Dr, Country Club Hills, IL 
     </div>
 
     <div class="call-to-action">
@@ -432,8 +436,40 @@
         </section>
     </div>
 
-    <div class="contact-form" id="contact">
-        CONTACT FORM
+    <div class="contact-info" id="contact">
+
+        <div class="contact-info__form">
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+        </div>
+
+        <div class="contact-detail">
+            <h5 class="contact-detail__heading">Get in touch</h5>
+            <p class="contact-detail__text">Curious to learn more about us? Feel free to
+                 reach out—we’re excited to hear from you and share our story!
+            </p>
+
+        </div>
     </div>
 
     <footer class="footer">

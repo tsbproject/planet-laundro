@@ -67,13 +67,31 @@ body {
 }
 
 .heading-1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 600;
   color: #f9f7f6;
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 56.25em) {
+  .heading-1 {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 37.05em) {
   .heading-1 {
     font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .heading-1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .heading-1 {
+    font-size: 2.6rem;
     font-weight: 600;
   }
 }
@@ -120,13 +138,15 @@ body {
 }
 
 .info-heading {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #00b1ef;
   text-align: center;
 }
 
 .hero-content {
+  display: grid;
+  row-gap: 3rem;
   text-align: center;
   padding: 0 2rem;
 }
@@ -138,9 +158,123 @@ body {
   text-align: center;
 }
 
-.contact-form {
+mb-sm {
+  margin-bottom: 2rem;
+}
+
+mb-md {
+  margin-bottom: 3rem;
+}
+
+mb-lg {
+  margin-bottom: 4rem;
+}
+
+mb-hg {
+  margin-bottom: 8rem;
+}
+
+.contact-info {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  padding: 2rem 4rem;
+  column-gap: 3rem;
+}
+
+.contact-detail__heading {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #f9f7f6;
+}
+.contact-detail__text {
+  font-size: 2rem;
+  color: #f9f7f6;
+}
+@media only screen and (max-width: 25em) {
+  .contact-detail__text {
+    width: 70%;
+  }
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Row for Name, Phone, and Email */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease;
+}
+@media only screen and (max-width: 25em) {
+  input,
+  textarea {
+    width: 70%;
+  }
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-submit {
+  padding: 0.8rem 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media only screen and (max-width: 25em) {
+  .btn-submit {
+    width: 70%;
+  }
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+.btn-submit {
+  font-size: 0.9rem;
 }
 
 .header {
@@ -199,6 +333,7 @@ body {
   align-content: center;
   justify-content: space-around;
   text-align: center;
+  height: 20vh;
 }
 
 .features-header {
@@ -208,11 +343,15 @@ body {
   align-content: center;
   justify-content: space-around;
   text-align: center;
+  height: 20vh;
 }
 
 .location-header {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
+  display: grid;
+  justify-content: center;
+  height: 20vh;
 }
 
 /* Social Media Icons Container */
@@ -486,7 +625,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .testimonial {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding: 2rem 4rem;
     margin: 4rem 1.2rem;
   }
@@ -533,16 +672,25 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
+}
+@media only screen and (max-width: 37.05em) {
+  .info-section {
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 @media only screen and (max-width: 31.25em) {
   .info-section {
     justify-content: center;
+    gap: 2rem;
   }
 }
 @media only screen and (max-width: 25em) {
   .info-section {
     justify-content: center;
     padding: 0 5rem;
+    gap: 2rem;
   }
 }
 .info-section__text {
@@ -661,8 +809,8 @@ nav a:hover {
 
 /* FAQ Question */
 .faq-question {
-  background: #067ca7;
-  color: #fff;
+  background: #00b1ef;
+  color: #6D5D4B;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
@@ -679,13 +827,16 @@ nav a:hover {
 }
 
 .faq-question:hover {
-  background: #444;
+  background: #067ca7;
 }
 
 /* Arrow */
 .arrow {
-  font-size: 1.5rem;
+  font-size: 3rem;
   transition: transform 0.3s ease;
+  color: #6D5D4B;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 /* FAQ Answer */
@@ -717,8 +868,45 @@ nav a:hover {
 }
 
 .location {
-  background-color: #aaa;
+  background-color: #f9f7f6;
   grid-column: center-start/center-end;
+  display: grid;
+}
+@media only screen and (max-width: 25em) {
+  .location {
+    padding: 2rem;
+    justify-content: center;
+  }
+}
+
+.map-container {
+  margin: 0; /* Remove any margins to make it full width */
+  padding: 0;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+@media only screen and (max-width: 25em) {
+  .map-container {
+    max-width: 100%;
+    padding: 0 6rem;
+  }
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-description {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
 }
 
 .services {

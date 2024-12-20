@@ -7,12 +7,27 @@
 .heading-1 {
    @extend %heading;
 
-   font-size: 4rem;
+   font-size: 6rem;
    font-weight: 600;
    color: $color-grey-light-1;
 
-   @media only screen and (max-width:$bp-smaller) {
+   @media only screen and (max-width:$bp-medium) {
+    font-size: 5rem;
+    font-weight: 600;
+   }
+
+   @media only screen and (max-width:$bp-small) {
     font-size: 2.5rem;
+    font-weight: 600;
+   }
+
+   @media only screen and (max-width:$bp-smaller) {
+    font-size: 3.2rem;
+    font-weight: 600;
+   }
+
+   @media only screen and (max-width:$bp-smallest) {
+    font-size: 2.6rem;
     font-weight: 600;
    }
   
@@ -65,7 +80,7 @@
 .info-heading {
     @extend %heading;
     @extend %heading;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     color: $color-primary;
     text-align: center;
@@ -77,6 +92,8 @@
 
 
 .hero-content {
+    display: grid;
+    row-gap: 3rem;
     text-align: center;
     padding: 0 2rem;
  
@@ -105,3 +122,7 @@
 
 
 
+mb-sm {margin-bottom: 2rem;}
+mb-md {margin-bottom: 3rem;}
+mb-lg{margin-bottom: 4rem;}
+mb-hg {margin-bottom: 8rem;}

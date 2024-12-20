@@ -17,9 +17,8 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-        justify-content: space-evenly;
-        gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        // justify-content: space-evenly;
         padding: 2rem 4rem;
         margin: 4rem 1.2rem;
             
@@ -43,7 +42,7 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        
+        max-width: 90vw;
         padding: 2rem 4rem ;
     }
 

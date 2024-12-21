@@ -88,7 +88,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .container {
-    grid-template-rows: 20vh 120vh min-content 450vw min-content repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content 450vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
@@ -1468,7 +1468,7 @@ nav a:hover {
     border: solid #f9f7f6;
     cursor: pointer;
     transition: all 0.2s;
-    color: #f9f7f6;
+    color: #067ca7;
   }
 }
 

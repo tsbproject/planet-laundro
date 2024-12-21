@@ -1163,6 +1163,12 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+.contact-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #6D5D4B;
+}
+
 .footer-links ul {
   list-style: none;
   padding: 0;

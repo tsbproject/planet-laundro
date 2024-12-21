@@ -213,16 +213,38 @@ body {
   font-weight: 800;
   color: #f9f7f6;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact-detail__heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .contact-detail__heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .contact-detail__heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .contact-detail__heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f9f7f6;
+  }
+}
 .contact-detail__text {
   font-size: 2rem;
   color: #f9f7f6;
 }
-@media only screen and (max-width: 25em) {
-  .contact-detail__text {
-    width: 70%;
-  }
-}
-
 /* Contact Form */
 .contact-form {
   display: flex;

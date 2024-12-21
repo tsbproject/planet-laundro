@@ -44,7 +44,7 @@ body {
 }
 @media only screen and (max-width: 37.05em) {
   .container {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content 230vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
@@ -58,7 +58,6 @@ body {
   .container {
     grid-template-rows: 20vh 120vh min-content 450vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
-    justify-content: center;
   }
 }
 
@@ -146,25 +145,11 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .info-heading {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: #00b1ef;
     text-align: center;
   }
-}
-
-.hero-content {
-  display: grid;
-  row-gap: 3rem;
-  text-align: center;
-  padding: 0 2rem;
-}
-.hero-content__text {
-  padding: 0 4rem;
-  font-size: 2rem;
-  font-weight: 300;
-  color: #f9f7f6;
-  text-align: center;
 }
 
 mb-sm {
@@ -189,6 +174,11 @@ mb-hg {
   display: grid;
   padding: 2rem 4rem;
   column-gap: 3rem;
+}
+@media only screen and (max-width: 25em) {
+  .contact-info {
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
 }
 
 .contact-detail__heading {
@@ -221,8 +211,18 @@ mb-hg {
 /* Form Row for Name, Phone, and Email */
 .form-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   gap: 1rem;
+}
+@media only screen and (max-width: 31.25em) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form-group {
@@ -232,7 +232,7 @@ mb-hg {
 }
 
 label {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #555;
 }
@@ -247,10 +247,27 @@ textarea {
   background-color: #f8f9fa;
   transition: border-color 0.3s ease;
 }
+@media only screen and (max-width: 37.05em) {
+  input,
+  textarea {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  input,
+  textarea {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: auto;
+  }
+}
 @media only screen and (max-width: 25em) {
   input,
   textarea {
-    width: 70%;
+    font-size: 1rem;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -278,7 +295,7 @@ textarea {
 }
 @media only screen and (max-width: 25em) {
   .btn-submit {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -286,7 +303,6 @@ textarea {
   background-color: #0056b3;
 }
 
-/* Responsive Design */
 .btn-submit {
   font-size: 0.9rem;
 }
@@ -551,6 +567,7 @@ nav a:hover {
 .hero-section {
   display: grid;
   align-content: center;
+  justify-content: center;
   grid-column: full-start/full-end;
   background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet7.jpg);
   background-size: cover;
@@ -586,6 +603,20 @@ nav a:hover {
   }
 }
 
+.hero-content {
+  display: grid;
+  row-gap: 3rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+.hero-content__text {
+  padding: 0 4rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f9f7f6;
+  text-align: center;
+}
+
 .features {
   grid-column: center-start/center-end;
   margin: 15rem 0;
@@ -604,7 +635,7 @@ nav a:hover {
 @media only screen and (max-width: 25em) {
   .feature {
     margin: auto;
-    padding: 0 3rem;
+    padding: 0;
   }
 }
 .feature__icon {
@@ -622,23 +653,28 @@ nav a:hover {
 .testimonial {
   grid-column: full-start/full-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   gap: 3rem;
   padding: 2rem 3rem;
   margin: 4rem;
 }
+@media only screen and (max-width: 37.05em) {
+  .testimonial {
+    gap: 3rem;
+    padding: 2rem 2rem;
+    margin: auto;
+  }
+}
 @media only screen and (max-width: 31.25em) {
   .testimonial {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
-    padding: 2rem 0rem;
-    margin: 4rem;
+    padding: 2rem 2rem;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 25em) {
   .testimonial {
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    padding: 2rem 4rem;
+    gap: 2rem;
+    padding: 2rem 1rem;
     margin: auto;
   }
 }
@@ -652,15 +688,22 @@ nav a:hover {
   padding: 5rem 5rem;
   gap: 2rem;
 }
+@media only screen and (max-width: 37.05em) {
+  .client {
+    margin: auto;
+    padding: 2rem 2rem;
+  }
+}
 @media only screen and (max-width: 31.25em) {
   .client {
+    margin: auto;
     padding: 2rem 2rem;
   }
 }
 @media only screen and (max-width: 25em) {
   .client {
-    max-width: 90vw;
-    padding: 2rem 4rem;
+    margin: auto;
+    padding: 2rem 3rem;
   }
 }
 .client__stars {
@@ -695,6 +738,7 @@ nav a:hover {
 @media only screen and (max-width: 31.25em) {
   .info-section {
     justify-content: center;
+    padding: 0 4rem;
     gap: 2rem;
   }
 }
@@ -798,7 +842,7 @@ nav a:hover {
 
 /* FAQ Container */
 .faq-container {
-  max-width: 100%;
+  width: 100%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -811,9 +855,9 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .faq-container {
-    max-width: 100%;
-    margin-right: auto;
-    padding: 0 8rem;
+    width: 100%;
+    margin: auto;
+    padding: 0 1rem;
   }
 }
 
@@ -1012,8 +1056,8 @@ nav a:hover {
 @media only screen and (max-width: 25em) {
   .map-container {
     width: 100%;
-    padding: 0 6rem;
-    justify-content: center;
+    margin: auto;
+    padding: 0;
   }
 }
 
@@ -1036,7 +1080,6 @@ nav a:hover {
 .services {
   grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   margin: 10rem 0;
   align-items: start;
 }
@@ -1222,6 +1265,22 @@ nav a:hover {
 .services-btn:hover {
   background-color: #067ca7;
   color: #f9f7f6;
+}
+@media only screen and (max-width: 37.05em) {
+  .services-btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #00b1ef;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #00b1ef;
+  }
 }
 @media only screen and (max-width: 31.25em) {
   .services-btn {

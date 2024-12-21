@@ -52,7 +52,7 @@
 /* FAQ Container */
 .faq-container {
     
-    max-width: 100%;
+    width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
 
@@ -67,10 +67,10 @@
 
         @media only screen and (max-width: $bp-smallest) {
       
-            max-width: 100%;
+            width: 100%;
             // justify-content: flex-start;
-            margin-right: auto;
-            padding: 0 8rem;
+            margin: auto;
+            padding: 0 1rem;
                 
             }
 }

@@ -3,22 +3,27 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     gap: 3rem;
     padding: 2rem 3rem;
     margin: 4rem;
 
+    @media only screen and (max-width: $bp-small) {
+        gap: 3rem;
+        padding: 2rem 2rem;
+        margin: auto;
+            
+        }
+
     @media only screen and (max-width: $bp-smaller) {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
-    padding: 2rem 0rem;
-    margin: 4rem;
+    padding: 2rem 2rem;
+    margin: auto;
         
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-        padding: 2rem 4rem;
+        gap: 2rem;
+        padding: 2rem 1rem;
         margin: auto;
             
         }
@@ -31,18 +36,26 @@
     flex-direction: column;
     background-color: $color-grey-light-3;
     border-radius: 3rem;
-   align-items: start;
+    align-items: start;
     padding: 5rem 5rem;
     gap: 2rem;
 
-    @media only screen and (max-width: $bp-smaller) {
+    @media only screen and (max-width: $bp-small) {
         
+        margin: auto;
+        padding: 2rem 2rem ;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      
+        margin: auto;
         padding: 2rem 2rem ;
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        max-width: 90vw;
-        padding: 2rem 4rem ;
+        
+        margin: auto;
+        padding: 2rem 3rem ;
     }
 
 

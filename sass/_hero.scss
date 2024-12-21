@@ -1,6 +1,7 @@
 .hero-section {
     display: grid;
     align-content: center;
+    justify-content: center;
     grid-column:full-start /full-end ;
     
    
@@ -53,6 +54,35 @@
    }
 
 }
+
+
+
+.hero-content {
+    display: grid;
+    row-gap: 3rem;
+    text-align: center;
+    padding: 0 2rem;
+ 
+ 
+    
+
+    
+
+    &__text {
+        padding: 0 4rem;
+        font-size: 2rem;
+        font-weight:300 ;
+        color: $color-grey-light-1;
+        text-align: center;
+
+
+    }
+
+   
+
+    
+}
+
 
 
 

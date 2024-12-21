@@ -80,7 +80,7 @@ body {
      
      
      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: 20vh 100vh min-content repeat(2, 230vw) repeat(9, min-content);
+        grid-template-rows: 20vh 100vh min-content  230vw min-content repeat(9, min-content);
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 
   }
@@ -97,7 +97,7 @@ body {
     grid-template-rows: 20vh 120vh min-content  450vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
     
-    justify-content: center;
+   
    
 
 

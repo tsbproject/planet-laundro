@@ -3,10 +3,18 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+ 
 
     padding: 2rem 4rem;
     column-gap: 3rem;
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: repeat(auto-fit, minmax( 1fr));
+        
+      
+
+    }
 }
 
 
@@ -54,9 +62,18 @@
 /* Form Row for Name, Phone, and Email */
 .form-row {
     display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 1rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+        grid-template-columns: (1fr);
+
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: (1fr);
+
+    }
 }
 
 .form-group {
@@ -66,7 +83,7 @@
 }
 
 label {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #555;
 }
@@ -81,8 +98,24 @@ textarea {
     background-color: #f8f9fa;
     transition: border-color 0.3s ease;
 
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.2rem;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.2rem;
+        width: 100%;
+        margin: auto;
+
+    }
+
     @media only screen and (max-width: $bp-smallest) {
-        width: 70%;
+        font-size: 1rem;
+        max-width: 100%;
         margin: auto;
 
     }
@@ -110,7 +143,7 @@ textarea {
     transition: background-color 0.3s ease;
 
     @media only screen and (max-width: $bp-smallest) {
-        width: 70%;
+        width: 100%;
 
     }
 }
@@ -119,14 +152,7 @@ textarea {
     background-color: #0056b3;
 }
 
-/* Responsive Design */
-// @media only screen and (max-width: $bp-smallest) {
-//     .form-row {
-//         // grid-template-columns: 1fr; 
-//         grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
-//     }
 
- 
 
     .btn-submit {
         font-size: 0.9rem;

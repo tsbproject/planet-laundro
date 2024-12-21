@@ -3,7 +3,7 @@
     grid-column: center-start / center-end;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     margin: 10rem 0;
 
     align-items: start;
@@ -11,10 +11,12 @@
 
     @media only screen and (max-width: $bp-medium) {
       grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
   
   }
 
   @media only screen and (max-width: $bp-smaller) {
+
     grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
 
 }

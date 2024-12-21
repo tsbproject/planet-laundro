@@ -57,28 +57,9 @@
     padding: 1rem 0; /* Add some padding at the top and bottom */
     
 
-    @media only screen and (max-width: $bp-large) {
+    
 
-       
-       
-    }
-
-    // @media only screen and (max-width: $bp-medium) {
-    //     display: none;
-    // }
-
-    // @media only screen and (max-width: $bp-small) {
-    //     display: none;
-    // }
-
-    // @media only screen and (max-width: $bp-smaller) {
-    //     display: none;
-    // }
-
-
-    // @media only screen and (max-width: $bp-smallest) {
-    //     display: none;
-    // }
+   
 
 
     
@@ -104,9 +85,9 @@
 
 /* Hover Effect for Social Icons */
 .social-icon:hover {
-    background-color: #007bff; /* Light blue background */
-    color: #fff; /* White icon on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #007bff; 
+    color: #fff; 
+    transform: scale(1.1); 
 }
 
 
@@ -114,4 +95,135 @@
 .call-to-action {
     background-color: $color-primary;
     grid-column: full-start / full-end;
+    display: grid;
+    row-gap: 5rem;
+  
+
+  
+   
+    padding: 2rem 4rem;
+
+   
+}
+
+
+
+.action-call {
+    display: grid;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+   
+
+
+    &__heading {
+        font-size: 4rem;
+        font-family: $font-display;
+        font-weight: 500;
+        line-height: 1;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+       
+
+         @media only screen and (max-width: $bp-medium) {
+            font-size: 3rem;
+            font-family: $font-display;
+            font-weight: 500;
+            letter-spacing: .5rem;
+            line-height: 1;
+            color: $color-grey-light-1;
+            text-transform: uppercase;
+      
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
+        font-family: $font-display;
+        font-weight: 500;
+        line-height: 1;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+        
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        font-size: 2.5rem;
+        font-family: $font-display;
+        letter-spacing: .3rem;
+        font-weight: 500;
+        line-height: 1;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+        
+        
+    }
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 2rem;
+        font-family: $font-display;
+        font-weight: 500;
+        line-height: 1;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+       
+    }
+
+    }
+
+
+    &__text {
+        font-size: 2.1rem;
+        font-family: $font-display;
+        font-weight:300;
+        line-height: 1;
+        color: $color-grey-light-1;
+
+        @media only screen and (max-width: $bp-medium) {
+        font-size: 1.9rem;
+        font-family: $font-display;
+        font-weight:300;
+        line-height: 1;
+        color: $color-grey-light-1;
+       
+           
+      
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.7rem;
+        font-family: $font-display;
+        font-weight:300;
+        line-height: 1;
+        color: $color-grey-light-1;
+       
+        
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        font-size: 2rem;
+        font-family: $font-display;
+        font-weight:300;
+        line-height: 1;
+        color: $color-grey-light-1;
+        
+        
+    }
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 2rem;
+        font-family: $font-display;
+        font-weight:300;
+        line-height: 1;
+        color: $color-grey-light-1;
+        
+       
+    }
+
+        
+
+    }
+
+    
 }

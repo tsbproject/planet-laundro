@@ -1,3 +1,35 @@
+mb-sm {
+  margin-bottom: 2rem;
+}
+
+mb-md {
+  margin-bottom: 3rem;
+}
+
+mb-lg {
+  margin-bottom: 4rem;
+}
+
+mb-hg {
+  margin-bottom: 8rem;
+}
+
+mt-sm {
+  margin-top: 2rem;
+}
+
+mt-md {
+  margin-top: 3rem;
+}
+
+mt-lg {
+  margin-top: 4rem;
+}
+
+mt-hg {
+  margin-top: 8rem;
+}
+
 *,
 *::before,
 *::after {
@@ -26,7 +58,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .container {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content repeat(2, 63vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
@@ -152,22 +184,6 @@ body {
   }
 }
 
-mb-sm {
-  margin-bottom: 2rem;
-}
-
-mb-md {
-  margin-bottom: 3rem;
-}
-
-mb-lg {
-  margin-bottom: 4rem;
-}
-
-mb-hg {
-  margin-bottom: 8rem;
-}
-
 .contact-info {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
@@ -175,6 +191,16 @@ mb-hg {
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 4rem;
   column-gap: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
 }
 @media only screen and (max-width: 25em) {
   .contact-info {
@@ -214,6 +240,11 @@ mb-hg {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   gap: 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
 @media only screen and (max-width: 31.25em) {
   .form-row {
@@ -286,8 +317,8 @@ textarea {
 
 .btn-submit {
   padding: 0.8rem 1.2rem;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #f9f7f6;
+  color: #067ca7;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -302,10 +333,11 @@ textarea {
 
 .btn-submit:hover {
   background-color: #0056b3;
+  color: #fff;
 }
 
 .btn-submit {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -812,6 +844,7 @@ nav a:hover {
   gap: 2rem; /* Space between the icons */
   padding: 1rem 0; /* Add some padding at the top and bottom */
 }
+
 .social-icon {
   display: inline-flex;
   justify-content: center;
@@ -830,20 +863,124 @@ nav a:hover {
 
 /* Hover Effect for Social Icons */
 .social-icon:hover {
-  background-color: #007bff; /* Light blue background */
-  color: #fff; /* White icon on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .call-to-action {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
+  display: grid;
+  row-gap: 5rem;
+  padding: 2rem 4rem;
+}
+
+.action-call {
+  display: grid;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.action-call__heading {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: #f9f7f6;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 56.25em) {
+  .action-call__heading {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    line-height: 1;
+    color: #f9f7f6;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .action-call__heading {
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    color: #f9f7f6;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .action-call__heading {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #f9f7f6;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .action-call__heading {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    color: #f9f7f6;
+    text-transform: uppercase;
+  }
+}
+.action-call__text {
+  font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #f9f7f6;
+}
+@media only screen and (max-width: 56.25em) {
+  .action-call__text {
+    font-size: 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .action-call__text {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .action-call__text {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .action-call__text {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    color: #f9f7f6;
+  }
 }
 
 .faq-section {
   grid-column: center-start/center-end;
   display: grid;
   justify-content: flex-start;
+  margin-top: 10rem;
 }
 
 .faq-heading {
@@ -973,7 +1110,7 @@ nav a:hover {
 
 /* Footer Styles */
 .footer {
-  background-color: #333;
+  background-color: #067ca7;
   color: #fff;
   padding: 2rem 1rem;
   font-family: Arial, sans-serif;
@@ -1134,8 +1271,14 @@ nav a:hover {
 .services {
   grid-column: center-start/center-end;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   margin: 10rem 0;
   align-items: start;
+}
+@media only screen and (max-width: 75em) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
 }
 @media only screen and (max-width: 68.75em) {
   .services {
@@ -1448,6 +1591,92 @@ nav a:hover {
     height: 5rem;
     font-size: 1.3rem;
     border-radius: 1.8rem;
+    color: #f9f7f6;
+  }
+}
+
+.action-button__btn {
+  background-color: transparent;
+  width: 35rem;
+  height: 6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  border: solid #f9f7f6;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #54483A;
+}
+.action-button__btn:hover {
+  background-color: #067ca7;
+  color: #f9f7f6;
+}
+@media only screen and (max-width: 56.25em) {
+  .action-button__btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 24rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #f9f7f6;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #6D5D4B;
+  }
+}
+@media only screen and (max-width: 56.25em) and (max-width: 37.05em) {
+  .action-button__btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #00b1ef;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #00b1ef;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .action-button__btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 25rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #f9f7f6;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #6D5D4B;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .action-button__btn {
+    background-color: transparent;
+    width: 22rem;
+    height: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #f9f7f6;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #54483A;
+  }
+  .action-button__btn:hover {
+    background-color: #067ca7;
     color: #f9f7f6;
   }
 }

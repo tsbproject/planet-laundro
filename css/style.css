@@ -187,7 +187,6 @@ mb-hg {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   padding: 2rem 4rem;
   column-gap: 3rem;
 }
@@ -252,6 +251,7 @@ textarea {
   input,
   textarea {
     width: 70%;
+    margin: auto;
   }
 }
 

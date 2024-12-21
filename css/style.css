@@ -38,13 +38,13 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .container {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 330vw) repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content 330vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container {
-    grid-template-rows: 20vh 100vh min-content 230vw min-content repeat(9, min-content);
+    grid-template-rows: 20vh 100vh min-content 300vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
@@ -172,12 +172,13 @@ mb-hg {
   background-color: #00b1ef;
   grid-column: full-start/full-end;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 2rem 4rem;
   column-gap: 3rem;
 }
 @media only screen and (max-width: 25em) {
   .contact-info {
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
+    grid-template-columns: 1fr;
   }
 }
 
@@ -622,8 +623,34 @@ nav a:hover {
   margin: 15rem 0;
   gap: 6rem;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: start;
   padding: 0 1rem;
+}
+@media only screen and (max-width: 68.75em) {
+  .features {
+    grid-template-columns: 3, 1fr;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .features {
+    grid-template-columns: 1fr;
+  }
 }
 
 .feature {
@@ -656,9 +683,19 @@ nav a:hover {
   gap: 3rem;
   padding: 2rem 3rem;
   margin: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 56.25em) {
+  .testimonial {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 2rem;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 37.05em) {
   .testimonial {
+    grid-template-columns: 1fr;
     gap: 3rem;
     padding: 2rem 2rem;
     margin: auto;
@@ -666,6 +703,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 31.25em) {
   .testimonial {
+    grid-template-columns: 1fr;
     gap: 3rem;
     padding: 2rem 2rem;
     margin: auto;
@@ -673,6 +711,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .testimonial {
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem 1rem;
     margin: auto;
@@ -1073,8 +1112,23 @@ nav a:hover {
 .map-description {
   margin: 1rem auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 4rem;
   color: #555;
+}
+@media only screen and (max-width: 37.05em) {
+  .map-description {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .map-description {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .map-description {
+    font-size: 2rem;
+  }
 }
 
 .services {
@@ -1082,6 +1136,11 @@ nav a:hover {
   display: grid;
   margin: 10rem 0;
   align-items: start;
+}
+@media only screen and (max-width: 68.75em) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
 }
 @media only screen and (max-width: 56.25em) {
   .services {
@@ -1280,6 +1339,24 @@ nav a:hover {
     cursor: pointer;
     transition: all 0.2s;
     color: #00b1ef;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .services-btn {
+    background-color: transparent;
+    margin-right: 2rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: solid #00b1ef;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #00b1ef;
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 31.25em) {

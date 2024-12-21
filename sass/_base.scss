@@ -73,14 +73,14 @@ body {
      
      
      @media only screen and (max-width: $bp-medium) {
-        grid-template-rows: 20vh 100vh min-content repeat(2, 330vw) repeat(9, min-content);
+        grid-template-rows: 20vh 100vh min-content 330vw min-content repeat(9, min-content);
         grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 
   } 
      
      
      @media only screen and (max-width: $bp-small) {
-        grid-template-rows: 20vh 100vh min-content  230vw min-content repeat(9, min-content);
+        grid-template-rows: 20vh 100vh min-content  300vw min-content repeat(9, min-content);
         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 
   }

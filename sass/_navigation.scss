@@ -9,8 +9,8 @@ header {
     z-index: 2000;
 
     @media only screen and (max-width: $bp-smallest) { 
-       justify-content: auto;
-       overflow-x: hidden;
+    
+      
     }
 
 }
@@ -136,6 +136,7 @@ nav a:hover {
         }
     }
 }
+
 
 
 

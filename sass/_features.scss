@@ -8,7 +8,7 @@
 
     display: grid;
     // grid-template-columns: repeat(3, 1fr) ;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+   
     align-items: start;
 
     padding: 0 5rem;
@@ -21,8 +21,15 @@
 .feature {
     display: grid;
     grid-template-columns: min-content 1fr;
+    // grid-template-columns: repeat(auto-fit, minmax(0rem,1fr));
     row-gap: 1.5rem;
     column-gap: 2.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin: auto;
+        padding: 0 3rem;
+
+    }
 
 
     &__icon {

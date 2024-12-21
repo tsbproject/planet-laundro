@@ -58,6 +58,7 @@ body {
   .container {
     grid-template-rows: 20vh 120vh min-content 450vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+    justify-content: center;
   }
 }
 
@@ -91,7 +92,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .heading-1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 }
@@ -142,6 +143,14 @@ body {
   font-weight: 600;
   color: #00b1ef;
   text-align: center;
+}
+@media only screen and (max-width: 25em) {
+  .info-heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #00b1ef;
+    text-align: center;
+  }
 }
 
 .hero-content {
@@ -203,6 +212,11 @@ mb-hg {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+@media only screen and (max-width: 25em) {
+  .contact-form {
+    margin: auto;
+  }
 }
 
 /* Form Row for Name, Phone, and Email */
@@ -429,13 +443,6 @@ header {
   position: relative;
   z-index: 2000;
 }
-@media only screen and (max-width: 25em) {
-  header {
-    justify-content: auto;
-    overflow-x: hidden;
-  }
-}
-
 nav {
   display: flex;
   gap: 25px;
@@ -584,7 +591,6 @@ nav a:hover {
   margin: 15rem 0;
   gap: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: start;
   padding: 0 5rem;
 }
@@ -594,6 +600,12 @@ nav a:hover {
   grid-template-columns: min-content 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
+}
+@media only screen and (max-width: 25em) {
+  .feature {
+    margin: auto;
+    padding: 0 3rem;
+  }
 }
 .feature__icon {
   fill: #067ca7;
@@ -625,9 +637,9 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .testimonial {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     padding: 2rem 4rem;
-    margin: 4rem 1.2rem;
+    margin: auto;
   }
 }
 
@@ -637,7 +649,7 @@ nav a:hover {
   background-color: #f6f4f4;
   border-radius: 3rem;
   align-items: start;
-  padding: 5rem 10rem;
+  padding: 5rem 5rem;
   gap: 2rem;
 }
 @media only screen and (max-width: 31.25em) {
@@ -689,7 +701,7 @@ nav a:hover {
 @media only screen and (max-width: 25em) {
   .info-section {
     justify-content: center;
-    padding: 0 5rem;
+    padding: 0 7rem;
     gap: 2rem;
   }
 }
@@ -748,7 +760,7 @@ nav a:hover {
 .faq-section {
   grid-column: center-start/center-end;
   display: grid;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .faq-heading {
@@ -774,28 +786,34 @@ nav a:hover {
   .faq-heading {
     font-size: 2rem;
     font-weight: 600;
+    margin: auto;
     text-transform: uppercase;
   }
 }
 
 .faq-heading2 {
   font-size: 1.7rem;
+  margin: auto;
 }
 
 /* FAQ Container */
 .faq-container {
-  max-width: 80rem;
+  max-width: 100%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 @media only screen and (max-width: 31.25em) {
   .faq-container {
-    max-width: 40rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 5rem;
   }
 }
 @media only screen and (max-width: 25em) {
   .faq-container {
-    max-width: 35rem;
+    max-width: 100%;
+    margin-right: auto;
+    padding: 0 8rem;
   }
 }
 
@@ -865,8 +883,113 @@ nav a:hover {
 .footer {
   background-color: #067ca7;
   grid-column: full-start/full-end;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #007bff;
+}
+
+.footer-contact p {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #007bff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
 .location {
   background-color: #f9f7f6;
   grid-column: center-start/center-end;
@@ -888,8 +1011,9 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .map-container {
-    max-width: 100%;
+    width: 100%;
     padding: 0 6rem;
+    justify-content: center;
   }
 }
 
@@ -928,7 +1052,7 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .services {
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 

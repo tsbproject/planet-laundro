@@ -27,7 +27,7 @@
    }
 
    @media only screen and (max-width:$bp-smallest) {
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 600;
    }
   
@@ -84,6 +84,17 @@
     font-weight: 600;
     color: $color-primary;
     text-align: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        @extend %heading;
+    @extend %heading;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-align: center;
+
+
+    }
     
     
 

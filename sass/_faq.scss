@@ -1,9 +1,10 @@
 .faq-section {
     grid-column: center-start / center-end;
+    // grid-template-columns: repeat(auto-fit, minmax(15vw));
 
 
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
 
 
 
@@ -35,6 +36,7 @@
             @media only screen and (max-width: $bp-smallest) {
                 font-size: 2rem;
                 font-weight: 600;
+                margin: auto;
                 text-transform: uppercase;
                 
                     
@@ -43,25 +45,32 @@
 
 .faq-heading2 {
     font-size: 1.7rem;
+    margin: auto;
 }
 
 
 /* FAQ Container */
 .faq-container {
-    max-width: 80rem;
+    
+    max-width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
 
     @media only screen and (max-width: $bp-smaller) {
       
-        max-width: 40rem;
+        max-width: 100%;
+        margin: 2rem auto;
+        padding: 0 5rem;
             
         }
 
 
         @media only screen and (max-width: $bp-smallest) {
       
-            max-width: 35rem;
+            max-width: 100%;
+            // justify-content: flex-start;
+            margin-right: auto;
+            padding: 0 8rem;
                 
             }
 }

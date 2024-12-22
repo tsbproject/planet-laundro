@@ -63,8 +63,13 @@ body {
     overflow-x: hidden;
 }
 
+
 .container {
-     display: grid;
+   display: grid;
+}
+
+.home-layout {
+     
      grid-template-rows: 20vh 140vh min-content repeat(2, 50vw) repeat(9, min-content);
      grid-template-columns: [full-start] minmax(6rem, 1fr)  [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
@@ -98,7 +103,6 @@ body {
   }
 
      @media only screen and (max-width: $bp-smaller) {
-        // grid-template-rows: auto ;
     grid-template-rows: 20vh 120vh min-content  300vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
 
@@ -117,4 +121,61 @@ body {
 
     
 }
+
+
+
+.services-layout {
+   
+    grid-template-rows: 20vh 40vh min-content min-content;
+    grid-template-columns: [full-start] minmax(6rem, 1fr)  [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    
+    @media only screen and (max-width: $bp-largest) {
+       grid-template-rows: 20vh 100vh min-content repeat(2, 63vw) repeat(9, min-content);
+       grid-template-columns: repeat(auto-fit, minmax(1fr));
+
+ } 
+    
+    
+    @media only screen and (max-width: $bp-large) {
+       grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+       grid-template-columns: repeat(auto-fit, minmax(1fr));
+
+ } 
+    
+    
+    
+    @media only screen and (max-width: $bp-medium) {
+       grid-template-rows: 20vh 100vh min-content 330vw min-content repeat(9, min-content);
+       grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+ } 
+    
+    
+    @media only screen and (max-width: $bp-small) {
+       grid-template-rows: 20vh 100vh min-content  300vw min-content repeat(9, min-content);
+       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+ }
+
+    @media only screen and (max-width: $bp-smaller) {
+   grid-template-rows: 20vh 120vh min-content  300vw min-content repeat(9, min-content);
+   grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+
+}
+   
+
+@media only screen and (max-width: $bp-smallest) {
+   grid-template-rows: 20vh 20vh min-content min-content;
+   grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+   
+  
+  
+
+
+}
+
+   
+}
+
 

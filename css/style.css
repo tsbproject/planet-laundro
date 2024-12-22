@@ -53,42 +53,86 @@ body {
 
 .container {
   display: grid;
+}
+
+.home-layout {
   grid-template-rows: 20vh 140vh min-content repeat(2, 50vw) repeat(9, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
-  .container {
+  .home-layout {
     grid-template-rows: 20vh 100vh min-content repeat(2, 63vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
-  .container {
+  .home-layout {
     grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .container {
+  .home-layout {
     grid-template-rows: 20vh 100vh min-content 330vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
-  .container {
+  .home-layout {
     grid-template-rows: 20vh 100vh min-content 300vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
-  .container {
+  .home-layout {
     grid-template-rows: 20vh 120vh min-content 300vw min-content repeat(9, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
-  .container {
+  .home-layout {
     grid-template-rows: 20vh 100vh min-content 450vw min-content repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+  }
+}
+
+.services-layout {
+  grid-template-rows: 20vh 40vh min-content min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 75em) {
+  .services-layout {
+    grid-template-rows: 20vh 100vh min-content repeat(2, 63vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  .services-layout {
+    grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .services-layout {
+    grid-template-rows: 20vh 100vh min-content 330vw min-content repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .services-layout {
+    grid-template-rows: 20vh 100vh min-content 300vw min-content repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .services-layout {
+    grid-template-rows: 20vh 120vh min-content 300vw min-content repeat(9, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+  }
+}
+@media only screen and (max-width: 25em) {
+  .services-layout {
+    grid-template-rows: 20vh 20vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
@@ -1405,6 +1449,50 @@ nav a:hover {
   font-size: 1.6rem;
   text-align: left;
   margin-bottom: 3rem;
+}
+
+.banner-top {
+  background-color: #00b1ef;
+  grid-column: full-start/full-end;
+}
+
+.banner-top {
+  padding: 0 4rem;
+}
+.banner-top__text {
+  font-size: 2rem;
+  color: #f9f7f6;
+}
+
+.call-to-action {
+  background-color: transparent;
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 25em) {
+  .call-to-action {
+    grid-template-columns: 1fr;
+  }
+}
+.call-to-action__img {
+  height: auto;
+  width: 100%;
+  border-radius: 1.4rem;
+  box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
+}
+
+.action-call {
+  display: grid;
+  align-content: center;
+}
+.action-call__heading {
+  font-size: 4rem;
+  color: #00b1ef;
+}
+.action-call__text {
+  font-size: 2rem;
+  color: #54483A;
 }
 
 .hero-button {

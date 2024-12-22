@@ -128,3 +128,71 @@
     }
 
 }
+
+
+.banner-top {
+  background-color: $color-primary;
+  grid-column: full-start / full-end;
+
+
+
+}
+
+.banner-top {
+  padding: 0 4rem;
+
+
+    
+    &__text {
+      font-size: 2rem;
+      color: $color-grey-light-1;
+    }
+}
+
+
+.call-to-action {
+  background-color: transparent;
+   grid-column: full-start / full-end;
+   
+
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+   @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: (1fr);
+
+   }
+
+
+   &__img {
+    height: auto;
+    width: 100%;
+    border-radius: 1.4rem;
+    box-shadow: 2rem 0 5rem rgba($color-grey-dark-1, .2);
+   }
+
+    
+
+}
+
+
+
+.action-call {
+  display: grid;
+
+  align-content: center;
+
+
+  &__heading {
+    font-size: 4rem;
+    color: $color-primary;
+
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: $color-grey-dark-1;
+  }
+
+   
+}

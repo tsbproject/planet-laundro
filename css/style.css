@@ -1527,6 +1527,30 @@ nav a:hover {
     color: #f9f7f6;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .services-banner__text {
+    font-size: 2.5rem;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .services-banner__text {
+    font-size: 2rem;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .services-banner__text {
+    font-size: 2.5rem;
+    color: #f9f7f6;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .services-banner__text {
+    font-size: 1.6rem;
+    color: #f9f7f6;
+  }
+}
 
 .services-info {
   background-color: transparent;

@@ -556,6 +556,17 @@
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
+
+  
+  @media only screen and (max-width: $bp-smallest) {
+    height: auto;
+    max-width: 100%;
+    border-radius: 1.4rem;
+    box-shadow: 2rem 0 5rem rgba($color-grey-dark-1, .2);
+  
+     
+  
+     }
  }
   
 

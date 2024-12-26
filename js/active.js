@@ -60,6 +60,41 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('shrink');
+    } else {
+        header.classList.remove('shrink');
+    }
+});
+
+
+////////////////////////////////
+/// SCROLL TO TOP BUTTON
+
+// Scroll to Top Button
+const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+// Show/hide button on scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollUpBtn.classList.add('show');
+        scrollUpBtn.classList.remove('hide');
+    } else {
+        scrollUpBtn.classList.remove('show');
+        scrollUpBtn.classList.add('hide');
+    }
+});
+
+// Scroll to top when button is clicked
+scrollUpBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 
 
 // // Ensure DOM is fully loaded before accessing elements

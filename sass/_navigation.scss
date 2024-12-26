@@ -1,26 +1,9 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    z-index: 2000;
 
-    @media only screen and (max-width: $bp-smallest) { 
-    
-    
-    
-      
-    }
-
-}
 
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 nav a {
@@ -28,6 +11,7 @@ nav a {
     color: black;
     font-size: 1.7rem;
     font-weight: 700;
+    margin-right: 2rem;
     transition: color 0.3s;
 
     @media only screen and (max-width: $bp-large) { 
@@ -49,6 +33,7 @@ nav a:hover {
     cursor: pointer;
     z-index: 3000;
     transition: transform 0.3s ease;
+    margin-right: 2rem;
 }
 
 .menu-toggle.active {

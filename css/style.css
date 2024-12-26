@@ -1984,7 +1984,47 @@ nav a:hover {
 @media only screen and (max-width: 75em) {
   .pricing-item__heading {
     font-size: 1.9rem;
-    color: #00b1ef;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  .pricing-item__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .pricing-item__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .pricing-item__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .pricing-item__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .pricing-item__heading {
+    font-size: 1.9rem;
+    color: #54483A;
     font-family: font-display;
     font-weight: 700;
   }

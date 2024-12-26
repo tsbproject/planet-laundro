@@ -788,6 +788,21 @@
     align-content: center;
     padding: 0 2rem;
 
+    @media only screen and (max-width: $bp-medium) {
+       
+      grid-template-columns:(1fr);
+   }
+
+    @media only screen and (max-width: $bp-small) {
+       
+      grid-template-columns:(1fr);
+   }
+
+    @media only screen and (max-width: $bp-smaller) {
+       
+      grid-template-columns:(1fr);
+   }
+
     @media only screen and (max-width: $bp-smallest) {
        
         grid-template-columns:(1fr);
@@ -831,8 +846,26 @@
 }
 
 .self-services-image {
-  grid-column: col-start 6 / col-start 7;
+  grid-column: col-start 5 / col-start 7;
   padding: 0 4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: full-start / full-end;
+      
+  
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: full-start / full-end;
+      
+  
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-column: full-start / full-end;
+      
+  
+  }
 
 
   @media only screen and (max-width: $bp-smallest) {
@@ -842,7 +875,7 @@
   }
 
   &__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: $color-grey-dark-1;
     font-family: font-display;
     font-weight: 700;
@@ -855,7 +888,50 @@
   
      }
 
+
+     @media only screen and (max-width: $bp-large) {
+      font-size: 1.9rem;
+      color: $color-grey-dark-1;
+      font-family: font-display;
+      font-weight: 700;
+  
+     }
+
+     @media only screen and (max-width: $bp-medium) {
+      font-size: 1.9rem;
+      color: $color-grey-dark-1;
+      font-family: font-display;
+      font-weight: 700;
+  
+     }
+
+     @media only screen and (max-width: $bp-small) {
+      font-size: 1.9rem;
+      color: $color-grey-dark-1;
+      font-family: font-display;
+      font-weight: 700;
+  
+     }
+
+     @media only screen and (max-width: $bp-smaller) {
+      font-size: 1.5rem;
+      color: $color-grey-dark-1;
+      font-family: font-display;
+      font-weight: 700;
+  
+     }
+  
+     @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.7rem;
+      color: $color-grey-dark-1;
+      font-family: font-display;
+      font-weight: 700;
+  
+     }
+
   }
+
+  
 
   &__span{
     color: $color-primary;
@@ -864,8 +940,8 @@
 
 
 .self-service-img {
-  height: 100vh;
-  max-width: 100%;
+  height: auto;
+  width: 100%;
   border-radius: 1.4rem;
   box-shadow: 2rem 0 5rem rgba($color-grey-dark-1, .2);
 

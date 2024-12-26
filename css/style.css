@@ -2169,6 +2169,21 @@ nav a:hover {
   align-content: center;
   padding: 0 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .self-services {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .self-services {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .self-services {
+    grid-template-columns: 1fr;
+  }
+}
 @media only screen and (max-width: 25em) {
   .self-services {
     grid-template-columns: 1fr;
@@ -2196,8 +2211,23 @@ nav a:hover {
 }
 
 .self-services-image {
-  grid-column: col-start 6/col-start 7;
+  grid-column: col-start 5/col-start 7;
   padding: 0 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .self-services-image {
+    grid-column: full-start/full-end;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .self-services-image {
+    grid-column: full-start/full-end;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .self-services-image {
+    grid-column: full-start/full-end;
+  }
 }
 @media only screen and (max-width: 25em) {
   .self-services-image {
@@ -2205,7 +2235,7 @@ nav a:hover {
   }
 }
 .self-services-image__heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #54483A;
   font-family: font-display;
   font-weight: 700;
@@ -2218,13 +2248,53 @@ nav a:hover {
     font-weight: 700;
   }
 }
+@media only screen and (max-width: 68.75em) {
+  .self-services-image__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .self-services-image__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .self-services-image__heading {
+    font-size: 1.9rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .self-services-image__heading {
+    font-size: 1.5rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .self-services-image__heading {
+    font-size: 1.7rem;
+    color: #54483A;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
 .self-services-image__span {
   color: #00b1ef;
 }
 
 .self-service-img {
-  height: 100vh;
-  max-width: 100%;
+  height: auto;
+  width: 100%;
   border-radius: 1.4rem;
   box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
 }

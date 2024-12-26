@@ -1972,7 +1972,11 @@ nav a:hover {
 }
 @media only screen and (max-width: 25em) {
   .pricing-item {
-    padding: 3rem 6rem;
+    height: auto;
+    max-width: 100%;
+    border-radius: 1.4rem;
+    box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
+    padding: 3rem 4rem;
   }
 }
 .pricing-item__heading {

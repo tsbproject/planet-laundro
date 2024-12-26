@@ -97,42 +97,42 @@ body {
 }
 
 .services-layout {
-  grid-template-rows: 20vh 40vh repeat(8, min-content);
+  grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh repeat(2, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
   .services-layout {
-    grid-template-rows: 20vh 25vh repeat(8, min-content);
+    grid-template-rows: 20vh 25vh repeat(7, min-content 30vh repeat(2, min-content));
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .services-layout {
-    grid-template-rows: 20vh 25vh repeat(8, min-content);
+    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .services-layout {
-    grid-template-rows: 20vh 30vh repeat(8, min-content);
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .services-layout {
-    grid-template-rows: 20vh 30vh repeat(8, min-content);
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .services-layout {
-    grid-template-rows: 20vh 20vh repeat(8, min-content);
+    grid-template-rows: 20vh 20vh repeat(7, min-content) 30vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .services-layout {
-    grid-template-rows: 20vh 20vh repeat(8, min-content);
+    grid-template-rows: 20vh 20vh repeat(7, min-content) 30vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
@@ -2112,6 +2112,138 @@ nav a:hover {
 .lightbox-close:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
+}
+
+.self-service-heading {
+  background: #00b1ef;
+  grid-column: full-start/full-end;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem 2rem;
+}
+.self-service-heading__large {
+  font-size: 5rem;
+  color: #f9f7f6;
+  font-family: font-display;
+  font-weight: 700;
+  text-align: center;
+}
+@media only screen and (max-width: 31.25em) {
+  .self-service-heading__large {
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .self-service-heading__large {
+    font-size: 3rem;
+    justify-content: center;
+  }
+}
+.self-service-heading__small {
+  font-size: 1.8rem;
+  color: #54483A;
+  text-align: center;
+  font-weight: 700;
+}
+@media only screen and (max-width: 25em) {
+  .self-service-heading__small {
+    font-size: 1.8rem;
+    justify-content: center;
+  }
+}
+
+.self-services-section {
+  grid-column: full-start/full-end;
+  display: grid;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.self-services {
+  grid-column: full-start/col-start 3;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 3rem;
+  align-content: center;
+  padding: 0 2rem;
+}
+@media only screen and (max-width: 25em) {
+  .self-services {
+    grid-template-columns: 1fr;
+  }
+}
+
+.self-service__heading {
+  font-size: 3rem;
+  color: #00b1ef;
+  font-family: font-display;
+  font-weight: 700;
+}
+@media only screen and (max-width: 75em) {
+  .self-service__heading {
+    font-size: 1.9rem;
+    color: #00b1ef;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+.self-service__text {
+  font-size: 2rem;
+  color: #54483A;
+  text-align: start;
+}
+
+.self-services-image {
+  grid-column: col-start 6/col-start 7;
+  padding: 0 4rem;
+}
+@media only screen and (max-width: 25em) {
+  .self-services-image {
+    grid-column: full-start/full-end;
+  }
+}
+.self-services-image__heading {
+  font-size: 3rem;
+  color: #54483A;
+  font-family: font-display;
+  font-weight: 700;
+}
+@media only screen and (max-width: 75em) {
+  .self-services-image__heading {
+    font-size: 1.9rem;
+    color: #00b1ef;
+    font-family: font-display;
+    font-weight: 700;
+  }
+}
+.self-services-image__span {
+  color: #00b1ef;
+}
+
+.self-service-img {
+  height: 60vh;
+  max-width: 100%;
+  border-radius: 1.4rem;
+  box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
+}
+@media only screen and (max-width: 25em) {
+  .self-service-img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 1.4rem;
+    box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
+  }
+}
+@media only screen and (max-width: 25em) {
+  .self-service-img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 1.4rem;
+    box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
+    padding: 3rem 4rem;
+  }
 }
 
 .hero-button {

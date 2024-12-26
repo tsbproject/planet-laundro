@@ -2213,7 +2213,7 @@ nav a:hover {
 @media only screen and (max-width: 75em) {
   .self-services-image__heading {
     font-size: 1.9rem;
-    color: #00b1ef;
+    color: #54483A;
     font-family: font-display;
     font-weight: 700;
   }
@@ -2223,12 +2223,12 @@ nav a:hover {
 }
 
 .self-service-img {
-  height: 60vh;
+  height: 100vh;
   max-width: 100%;
   border-radius: 1.4rem;
   box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 31.25em) {
   .self-service-img {
     height: auto;
     max-width: 100%;
@@ -2242,7 +2242,6 @@ nav a:hover {
     max-width: 100%;
     border-radius: 1.4rem;
     box-shadow: 2rem 0 5rem rgba(84, 72, 58, 0.2);
-    padding: 3rem 4rem;
   }
 }
 

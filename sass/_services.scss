@@ -849,7 +849,7 @@
 
     @media only screen and (max-width: $bp-largest) {
       font-size: 1.9rem;
-      color: $color-primary;
+      color: $color-grey-dark-1;
       font-family: font-display;
       font-weight: 700;
   
@@ -864,14 +864,14 @@
 
 
 .self-service-img {
-  height: 60vh;
+  height: 100vh;
   max-width: 100%;
   border-radius: 1.4rem;
   box-shadow: 2rem 0 5rem rgba($color-grey-dark-1, .2);
 
  
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-smaller) {
     height: auto;
     max-width: 100%;
     border-radius: 1.4rem;
@@ -888,7 +888,7 @@
   border-radius: 1.4rem;
   box-shadow: 2rem 0 5rem rgba($color-grey-dark-1, .2);
 
-    padding: 3rem 4rem;
+   
   
 
    }

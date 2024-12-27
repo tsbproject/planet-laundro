@@ -138,42 +138,42 @@ body {
 }
 
 .pickup-layout {
-  grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+  grid-template-rows: 20vh 120vh 60vw 45vh min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
   .pickup-layout {
-    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .pickup-layout {
-    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .pickup-layout {
-    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .pickup-layout {
-    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .pickup-layout {
-    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .pickup-layout {
-    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 100vh 60vw 45vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
@@ -302,6 +302,48 @@ body {
 .scroll-up-btn.hide {
   opacity: 0;
   transform: scale(0.9);
+}
+
+.pickup-banner {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/planet-delivery.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickup-banner__heading {
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #f9f7f6;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.pickup-banner__text {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f9f7f6;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.pickup-banner__btn {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #f9f7f6;
+  background-color: #00b1ef;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 6rem;
+}
+.pickup-banner__btn:hover {
+  background-color: #067ca7;
 }
 
 .contact-info {
@@ -761,7 +803,7 @@ nav a:hover {
   align-content: center;
   justify-content: center;
   grid-column: full-start/full-end;
-  background-image: linear-gradient(105deg, #6d5d4b, rgba(6, 124, 167, 0) 100%, transparent 30%), url(../img/planet7.jpg);
+  background-image: linear-gradient(rgba(109, 93, 75, 0.7), rgba(84, 72, 58, 0.7) 100%, transparent 100%), url(../img/planet7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2579,7 +2621,7 @@ nav a:hover {
     border: solid #f9f7f6;
     cursor: pointer;
     transition: all 0.2s;
-    color: #067ca7;
+    color: #f9f7f6;
   }
 }
 

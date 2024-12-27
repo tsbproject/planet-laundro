@@ -86,8 +86,6 @@
     text-align: center;
 
     @media only screen and (max-width: $bp-smallest) {
-        @extend %heading;
-    @extend %heading;
     font-size: 2.4rem;
     font-weight: 600;
     color: $color-primary;
@@ -140,6 +138,75 @@
 .scroll-up-btn.hide {
     opacity: 0;
     transform: scale(0.9);
+}
+
+
+//////////////////////////////////////
+/// PICKUP AND DELIVERY PAGE STYLES
+
+
+.pickup-banner {
+    grid-column: full-start / full-end;
+
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/planet-delivery.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    
+}
+
+
+.pickup-banner {
+    &__heading {
+        font-size: 5rem;
+        font-weight: 600;
+        font-family: $font-display;
+        color: $color-grey-light-1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 300;
+        color: $color-grey-light-1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    &__btn {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: $color-grey-light-1;
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        transition: background-color 0.3s ease;
+        margin-top: 2rem;
+        width: 25rem;
+        height: 6rem;
+
+    }
+
+
+    &__btn:hover {
+        background-color: $color-primary-dark;
+    }
+
+
+
+
 }
 
 

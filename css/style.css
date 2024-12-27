@@ -102,37 +102,78 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .services-layout {
-    grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .services-layout {
-    grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content;
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .services-layout {
-    grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content;
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .services-layout {
-    grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content;
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .services-layout {
-    grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content;
+    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .services-layout {
-    grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content;
+    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  }
+}
+
+.pickup-layout {
+  grid-template-rows: 20vh 40vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 75em) {
+  .pickup-layout {
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  .pickup-layout {
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .pickup-layout {
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .pickup-layout {
+    grid-template-rows: 20vh 30vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .pickup-layout {
+    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+  }
+}
+@media only screen and (max-width: 25em) {
+  .pickup-layout {
+    grid-template-rows: 20vh 25vh repeat(7, min-content) 30vh min-content 30vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }

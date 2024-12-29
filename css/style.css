@@ -138,42 +138,42 @@ body {
 }
 
 .pickup-layout {
-  grid-template-rows: 20vh 120vh 60vw 45vh min-content;
+  grid-template-rows: 20vh 120vh repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
   .pickup-layout {
-    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .pickup-layout {
-    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .pickup-layout {
-    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .pickup-layout {
-    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .pickup-layout {
-    grid-template-rows: 20vh 120vh 60vw 45vh min-content;
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .pickup-layout {
-    grid-template-rows: 20vh 100vh 60vw 45vh min-content;
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
@@ -344,6 +344,169 @@ body {
 }
 .pickup-banner__btn:hover {
   background-color: #067ca7;
+}
+
+.pickup-process-heading {
+  grid-column: center-start/center-end;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem;
+  text-align: center;
+  color: #00b1ef;
+}
+
+.pickup-processeses {
+  grid-column: col-start 4/col-start 9;
+}
+@media only screen and (max-width: 56.25em) {
+  .pickup-processeses {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .pickup-processeses {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .pickup-processeses {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .pickup-processeses {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+
+.pickup-process {
+  grid-gap: 3rem;
+  padding: 3rem;
+}
+.pickup-process__icon {
+  fill: #00b1ef;
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+  top: 0;
+  left: 20rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .pickup-process__icon {
+    position: relative;
+    top: 0;
+    left: 14rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .pickup-process__icon {
+    position: relative;
+    top: 0;
+    left: 14rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .pickup-process__icon {
+    position: relative;
+    top: 0;
+    left: 14rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .pickup-process__icon {
+    position: relative;
+    top: 0;
+    left: 12rem;
+  }
+}
+.pickup-process__text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #54483A;
+  text-align: start;
+}
+.pickup-process__heading {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #54483A;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .pickup-process__heading {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .pickup-process__heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .pickup-process__heading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .pickup-process__heading {
+    font-size: 2rem;
+  }
+}
+.pickup-process__step {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pickup-cta {
+  grid-column: full-start/full-end;
+  padding: 3rem;
+  text-align: center;
+  background-color: #00b1ef;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .pickup-cta {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .pickup-cta {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+.pickup-cta .pickup-cta__heading {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #f9f7f6;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.pickup-cta__btn {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #f9f7f6;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: 2px solid #f9f7f6;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 6rem;
+}
+.pickup-cta__btn:hover {
+  background-color: #f9f7f6;
+  color: #00b1ef;
 }
 
 .contact-info {

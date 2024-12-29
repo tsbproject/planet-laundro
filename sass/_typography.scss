@@ -210,3 +210,194 @@
 }
 
 
+.pickup-process-heading {
+    grid-column: center-start / center-end;
+    
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: $font-display;
+    padding: 3rem ;
+    text-align: center;
+    color: $color-primary;
+
+    
+}
+
+
+.pickup-processeses {
+    grid-column: col-start 4 / col-start 9;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: full-start / full-end;
+        padding: 2rem;
+       }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-column: full-start / full-end;
+        padding: 2rem;
+       }
+
+
+    @media only screen and (max-width: $bp-smaller) {
+        grid-column: full-start / full-end;
+        padding: 2rem;
+       }
+
+   
+   @media only screen and (max-width: $bp-smallest) {
+    grid-column: full-start / full-end;
+    padding: 2rem;
+   }
+ 
+    
+
+   
+}
+
+
+.pickup-process {
+ 
+   
+    // align-content: center;
+    grid-gap: 3rem;
+    padding: 3rem;
+   
+   
+
+   
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        position: relative;
+        top: 0;
+        left: 20rem;
+       
+        @media only screen and (max-width: $bp-medium) {
+            position: relative;
+            top: 0;
+            left: 14rem;
+        }
+ 
+     @media only screen and (max-width: $bp-small) {
+                position: relative;
+                top: 0;
+                left: 14rem;
+        }
+ 
+ 
+     @media only screen and (max-width: $bp-smaller) {
+                position: relative;
+                top: 0;
+                left: 14rem;
+        }
+ 
+    
+    @media only screen and (max-width: $bp-smallest) {
+        position: relative;
+        top: 0;
+        left: 12rem;
+    }
+        
+       
+      
+       
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-grey-dark-1;
+        text-align: start;
+
+        
+    }
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: $font-display;
+        color: $color-grey-dark-1;
+        text-align: start;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.5rem;
+        }
+ 
+     @media only screen and (max-width: $bp-small) {
+                font-size: 2rem;
+        }
+ 
+ 
+     @media only screen and (max-width: $bp-smaller) {
+           font-size: 2rem;
+        }
+ 
+    
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 2rem;
+    }
+    }
+
+    &__step {
+       
+
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+
+.pickup-cta {
+    grid-column: full-start / full-end;
+    padding: 3rem;
+    text-align: center;
+    background-color: $color-primary;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: full-start / full-end;
+        padding: 2rem;
+       }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-column: full-start / full-end;
+        padding: 2rem;
+       }
+
+
+       &
+    &__heading {
+        font-size: 4rem;
+        font-weight: 600;
+        font-family: $font-display;
+        color: $color-grey-light-1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    &__btn {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: $color-grey-light-1;
+        background-color: transparent;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        border: 2px solid $color-grey-light-1;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        margin-top: 2rem;
+        width: 25rem;
+        height: 6rem;
+
+        &:hover {
+            background-color: $color-grey-light-1;
+            color: $color-primary;
+        }
+
+    }
+
+
+    }

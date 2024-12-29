@@ -178,6 +178,47 @@ body {
   }
 }
 
+.about-layout {
+  grid-template-rows: 20vh 120vh repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 75em) {
+  .about-layout {
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  .about-layout {
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .about-layout {
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .about-layout {
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .about-layout {
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+  }
+}
+@media only screen and (max-width: 25em) {
+  .about-layout {
+    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  }
+}
+
 .info-heading, .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -356,7 +397,7 @@ body {
   color: #f9f7f6;
   background-color: #00b1ef;
   padding: 1rem 2rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
   transition: background-color 0.3s ease;
   margin-top: 2rem;
   width: 25rem;

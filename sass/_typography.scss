@@ -158,6 +158,8 @@
     justify-content: center;
     align-items: center;
 
+    
+
 
 
 
@@ -173,6 +175,24 @@
         color: $color-grey-light-1;
         text-align: center;
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 4rem;
+        }
+    
+     @media only screen and (max-width: $bp-small) {
+                font-size: 3.5rem;
+        }
+    
+    
+     @media only screen and (max-width: $bp-smaller) {
+           font-size: 3.5rem;
+        }
+    
+    
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+    }
     }
 
 

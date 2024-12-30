@@ -406,7 +406,7 @@
        }
 
 
-       &
+       
     &__heading {
         font-size: 4rem;
         font-weight: 600;
@@ -440,3 +440,278 @@
 
 
     }
+
+
+    .about {
+        grid-column: full-start / full-end;
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        padding: 3rem;
+    
+
+ @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: (1fr);
+    }
+
+ @media only screen and (max-width: $bp-small) {
+    grid-template-columns: (1fr);
+    }
+
+
+ @media only screen and (max-width: $bp-smaller) {
+    grid-template-columns: (1fr);
+    }
+
+
+@media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: (1fr);
+}
+
+
+        &__img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: .5rem;
+
+            box-shadow: 2rem 2rem 2rem rgba($color-grey-dark-1, 0.2);
+           
+            @media only screen and (max-width: $bp-smallest) {
+                max-width: 100%;
+                height: auto;
+               
+            }
+        }
+
+    }
+
+
+    .about-details {
+     align-content: center;
+     padding: 0 2rem;
+
+
+        
+        &__heading {
+            font-size: 4rem;
+            font-weight: 600;
+            font-family: $font-display;
+            color: $color-primary;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 3rem;
+                }
+            
+             @media only screen and (max-width: $bp-small) {
+                font-size: 3rem;
+                }
+            
+            
+             @media only screen and (max-width: $bp-smaller) {
+                font-size: 3rem;
+                }
+            
+            
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 3rem;
+                text-align: center;
+            }
+            
+
+            
+        }
+
+        &__subheading {
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: $font-display;
+            color: $color-grey-dark-1;
+            margin-bottom: 2rem;
+        }
+
+
+        &__text {
+            font-size: 2rem;
+            font-weight: 300;
+
+          
+           
+        }
+
+    }
+
+    .value-tabs {
+        background-color: $color-primary;
+        grid-column: full-start / full-end;
+
+
+        align-content: center;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 0 5rem;
+        }
+    }
+
+
+    .value-tab {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        padding: 1rem 2rem;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 0 10rem;
+        }
+        
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            gap: 5rem;
+        }
+        
+         @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            gap: 5rem;
+        }
+        
+        
+         @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column; 
+            gap: 5rem;
+         }
+        
+        
+        @media only screen and (max-width: $bp-smallest) {
+            flex-direction: column;
+            gap: 5rem;
+
+        
+            
+            
+        }
+        
+
+        
+    }
+
+    .value-tab-content {
+        display: grid;
+        justify-items: center;
+        align-content: center;
+
+
+        &__icon {
+            fill: $color-grey-light-1;
+            width: 8rem;
+            height: 8rem;
+            transition: all .2s;
+
+            &:hover {
+                fill: $color-grey-light-2;
+            }
+           
+           
+           
+        }
+
+        &__heading {
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: $font-display;
+            color: $color-grey-light-1;
+            margin-bottom: 2rem;
+
+           
+           
+        }
+
+
+    }
+
+
+    .qualities {
+        grid-column: col-start 4 / col-start 9;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: full-start / full-end;
+            padding: 2rem;
+           }
+    
+        @media only screen and (max-width: $bp-small) {
+            grid-column: full-start / full-end;
+            padding: 2rem;
+           }
+    
+    
+        @media only screen and (max-width: $bp-smaller) {
+            grid-column: full-start / full-end;
+            padding: 3rem;
+           }
+    
+       
+       @media only screen and (max-width: $bp-smallest) {
+        grid-column: full-start / full-end;
+        padding: 6rem;
+       }
+
+
+
+         
+
+
+        &__heading {
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: $font-display;
+            color: $color-primary;
+            margin: 7rem 0;
+
+            @media only screen and (max-width: $bp-smaller) {
+                font-size: 3rem;
+            }
+     
+        
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .quality-list {
+        list-style: none;
+        font-size: 2rem;
+        color: #000;
+       
+
+    }
+
+
+    .quality {
+        display: flex;
+        gap: 2rem;
+        margin: 5rem 0;
+        justify-content: center;
+     
+     
+
+
+        &__icon {
+            fill: $color-primary;
+            width: 4rem;
+            height:4rem;
+        }
+    }
+
+    .quality strong {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+
+
+

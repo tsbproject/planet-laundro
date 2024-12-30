@@ -179,43 +179,43 @@ body {
 }
 
 .about-layout {
-  grid-template-rows: 20vh 120vh repeat(4, min-content);
+  grid-template-rows: 20vh min-content 40vh repeat(2, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
   .about-layout {
-    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-rows: 20vh min-content 40vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .about-layout {
-    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-rows: 20vh min-content 40vh repeat(2, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .about-layout {
-    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-rows: 20vh repeat(3, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .about-layout {
-    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-rows: 20vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .about-layout {
-    grid-template-rows: 20vh 120vh repeat(4, min-content);
+    grid-template-rows: 20vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .about-layout {
-    grid-template-rows: 20vh 120vh repeat(4, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+    grid-template-rows: 20vh repeat(4, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   }
 }
 
@@ -604,7 +604,7 @@ body {
     padding: 2rem;
   }
 }
-.pickup-cta .pickup-cta__heading {
+.pickup-cta__heading {
   font-size: 4rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -629,6 +629,229 @@ body {
 .pickup-cta__btn:hover {
   background-color: #f9f7f6;
   color: #00b1ef;
+}
+
+.about {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+.about__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 2rem 2rem 2rem rgba(84, 72, 58, 0.2);
+}
+@media only screen and (max-width: 25em) {
+  .about__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.about-details {
+  align-content: center;
+  padding: 0 2rem;
+}
+.about-details__heading {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #00b1ef;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .about-details__heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .about-details__heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .about-details__heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .about-details__heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+.about-details__subheading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #54483A;
+  margin-bottom: 2rem;
+}
+.about-details__text {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.value-tabs {
+  background-color: #00b1ef;
+  grid-column: full-start/full-end;
+  align-content: center;
+}
+@media only screen and (max-width: 75em) {
+  .value-tabs {
+    padding: 0 5rem;
+  }
+}
+
+.value-tab {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 75em) {
+  .value-tab {
+    padding: 0 10rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .value-tab {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .value-tab {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .value-tab {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .value-tab {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+.value-tab-content {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.value-tab-content__icon {
+  fill: #f9f7f6;
+  width: 8rem;
+  height: 8rem;
+  transition: all 0.2s;
+}
+.value-tab-content__icon:hover {
+  fill: #aaa;
+}
+.value-tab-content__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #f9f7f6;
+  margin-bottom: 2rem;
+}
+
+.qualities {
+  grid-column: col-start 4/col-start 9;
+}
+@media only screen and (max-width: 56.25em) {
+  .qualities {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .qualities {
+    grid-column: full-start/full-end;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .qualities {
+    grid-column: full-start/full-end;
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .qualities {
+    grid-column: full-start/full-end;
+    padding: 6rem;
+  }
+}
+.qualities__heading {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #00b1ef;
+  margin: 7rem 0;
+}
+@media only screen and (max-width: 31.25em) {
+  .qualities__heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .qualities__heading {
+    font-size: 2rem;
+  }
+}
+
+.quality-list {
+  list-style: none;
+  font-size: 2rem;
+  color: #000;
+}
+
+.quality {
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 0;
+  justify-content: center;
+}
+.quality__icon {
+  fill: #00b1ef;
+  width: 4rem;
+  height: 4rem;
+}
+
+.quality strong {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .contact-info {

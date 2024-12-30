@@ -238,19 +238,19 @@ body {
 
 .about-layout {
    
-   grid-template-rows: 20vh  min-content 40vh  repeat(2, min-content) ;  
+   grid-template-rows: 20vh  min-content  40vh repeat(2, min-content) ;  
    grid-template-columns: [full-start] minmax(6rem, 1fr)  [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
    
    @media only screen and (max-width: $bp-largest) {
-      grid-template-rows: 20vh  min-content 40vh  repeat(2, min-content) ;      
+      grid-template-rows: 20vh min-content  40vh  repeat(2, min-content) ;    
       grid-template-columns: repeat(auto-fit, minmax(1fr));
 
 } 
    
    
    @media only screen and (max-width: $bp-large) {
-      grid-template-rows: 20vh  min-content 40vh  repeat(2, min-content) ;            
+    grid-template-rows: 20vh  min-content 40vh  repeat(2, min-content) ;         
      grid-template-columns: repeat(auto-fit, minmax(1fr));
 
 } 
@@ -258,28 +258,28 @@ body {
    
    
    @media only screen and (max-width: $bp-medium) {
-      grid-template-rows: 20vh    repeat(3, min-content) ;       
+      grid-template-rows: 20vh  repeat(4, min-content) ;      
      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 
 } 
    
    
    @media only screen and (max-width: $bp-small) {
-      grid-template-rows: 20vh   repeat(4, min-content) ;           
+      grid-template-rows: 20vh    repeat(4, min-content) ;          
      grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
 
 }
 
    @media only screen and (max-width: $bp-smaller) {
-      grid-template-rows: 20vh  repeat(4, min-content) ;          
+   grid-template-rows: 20vh   repeat(4, min-content) ;       
   grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
 
 }
   
 
 @media only screen and (max-width: $bp-smallest) {
-   grid-template-rows: 20vh  repeat(4, min-content) ;        
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-rows: 20vh  repeat(4, min-content) ;      
+  grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   
  
  
@@ -289,6 +289,10 @@ body {
 
   
 }
+
+
+
+
 
 .contact-layout {
    

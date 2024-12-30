@@ -551,9 +551,7 @@
 
         align-content: center;
 
-        @media only screen and (max-width: $bp-largest) {
-            padding: 0 5rem;
-        }
+       
     }
 
 
@@ -613,6 +611,12 @@
 
             &:hover {
                 fill: $color-grey-light-2;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                width: 6rem;
+                height: 6rem;
+
             }
            
            

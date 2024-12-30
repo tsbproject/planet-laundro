@@ -196,7 +196,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .about-layout {
-    grid-template-rows: 20vh repeat(3, min-content);
+    grid-template-rows: 20vh repeat(4, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
@@ -215,7 +215,7 @@ body {
 @media only screen and (max-width: 25em) {
   .about-layout {
     grid-template-rows: 20vh repeat(4, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
 
@@ -721,11 +721,6 @@ body {
   grid-column: full-start/full-end;
   align-content: center;
 }
-@media only screen and (max-width: 75em) {
-  .value-tabs {
-    padding: 0 5rem;
-  }
-}
 
 .value-tab {
   display: flex;
@@ -777,6 +772,12 @@ body {
 }
 .value-tab-content__icon:hover {
   fill: #aaa;
+}
+@media only screen and (max-width: 25em) {
+  .value-tab-content__icon {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 .value-tab-content__heading {
   font-size: 2rem;
